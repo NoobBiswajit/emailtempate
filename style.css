@@ -10,78 +10,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.sidebar {
-  width: 20%;
-  padding: 30px 20px 0px 20px;
-  background: black;
-  position: fixed;
-  bottom: 0;
-  height: 100%;
-  z-index: 11111;
-}
-.userAvater {
-  display: flex;
-  justify-content: center;
-}
-.userIdenty {
-  display: block;
-  justify-content: center;
-}
-.userImg {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  border: 2px solid wheat;
-}
-
-.userInfo h2 {
-  font-size: 24px;
-  color: #fff;
-  margin-top: 20px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.userInfo p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  margin-top: 15px;
-  text-align: center;
-}
-
-.membership {
-  font-size: 15px;
-  font-weight: 300;
-  color: #fff;
-  margin-top: 15px;
-  text-align: center;
-}
-
-.userContact {
-  margin-top: 30px;
-}
-.user-soical {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
-.soical-icon p {
-  font-size: 18px;
-  color: #fff;
-  margin-top: 4px;
-}
-
-.soical-text p {
-  font-size: 16px;
-  color: #fff;
-  margin-left: 10px;
-}
 
 .investor h1 {
   color: white;
@@ -89,23 +17,15 @@ body {
   text-align: center;
   font-weight: 700;
 }
+
 .investor p {
   color: white;
   font-size: 14px;
   padding-top: 12px;
   text-align: justify;
 }
-.main_area {
-  display: flex;
-  justify-content: space-between;
-}
 
-.main_sidebar {
-  width: 20%;
-}
-.main_content {
-  width: 80%;
-}
+
 
 .content_header {
   padding: 20px;
@@ -115,6 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .total_deposite {
   display: flex;
   justify-content: end;
@@ -126,6 +47,7 @@ body {
   color: navy;
   font-weight: 600;
 }
+
 .deposite_amount p {
   font-size: -18px;
   color: navy;
@@ -138,13 +60,49 @@ body {
   color: #7a7d82;
   font-weight: 600;
 }
+
 .terms tbody tr td {
   border: 1px solid navy;
 }
+
 .terms_area {
   width: 90%;
   margin: auto;
 }
+
+.user {
+  width: 90%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.user_info_area {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.user .user_info_left p,
+.user_info_right p {
+  font-size: 16px;
+  color: navy;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.termSegment {
+  background: rgb(94, 160, 163);
+  background: linear-gradient(90deg, rgba(94, 160, 163, 0.4683998599439776) 20%, rgba(212, 228, 205, 0.4683998599439776) 50%, rgba(164, 210, 219, 1) 90%);
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+
 .terms_area table {
   width: 100%;
   border-collapse: collapse;
@@ -155,10 +113,13 @@ body {
   padding: 10px;
 }
 
+
+
 .terms_area {
   padding: 20px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: 22px 20px 11px -18px #7a7d82;
+  border-bottom: solid rgb(227, 223, 223);
+  border-left: solid rgb(227, 223, 223);
   border-radius: 5px;
   margin-top: 30px;
 }
@@ -176,6 +137,10 @@ body {
   color: white;
 }
 
+.terms_area thead tr {
+  border: 1px solid #000;
+}
+
 .declaration {
   width: 90%;
   margin: auto;
@@ -184,7 +149,7 @@ body {
 .declaration h2 {
   text-align: center;
   margin-bottom: 20px;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 .monthDetails h2 {
@@ -196,13 +161,26 @@ body {
   text-align: end;
 }
 
+.tenureStatus {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: black;
+  text-align: start;
+}
+
+
+
 .monthDetails {
   margin: 50px;
   padding: 20px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: 22px 20px 11px -18px #7a7d82;
+  border-bottom: solid rgb(227, 223, 223);
+  border-left: solid rgb(227, 223, 223);
   border-radius: 5px;
 }
+
 
 .monthDetails table {
   width: 100%;
@@ -217,12 +195,52 @@ body {
 .monthDetails thead {
   background-color: navy;
   color: white;
+  border: 1px solid #000;
 }
 
 .monthDetails td {
   text-align: center;
   padding: 10px;
 }
+
+.sidebar {
+  box-shadow: 15px 1px 25px -8px #7a7d82;
+}
+
+.ending {
+  padding: 0px;
+  background-color: black;
+  color: white;
+}
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.texts {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ending img {
+  height: 33px;
+  width: 33px;
+  align-items: center;
+}
+
+.ending p {
+  padding: 5px;
+}
+
+
 
 /* ================MediaQuary========== */
 @media only screen and (max-width: 991px) {
@@ -234,75 +252,27 @@ body {
     background: black;
     position: fixed;
   }
+
   .usearArea {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .userImg {
-    width: 50px;
-    height: 50px;
-  }
-  .main_sidebar {
-    width: 0%;
-  }
-  .main_content {
-    width: 100%;
-    margin: 0 auto;
-  }
 
-  .userInfo h2 {
-    font-size: 18px;
-    color: #fff;
-    margin-top: 0px;
-    text-align: left;
-  }
 
-  .userInfo p {
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 0px;
-    text-align: left;
-  }
-  .userContact {
-    margin-top: 0px;
-    display: flex;
-    gap: 20px;
-    justify-content: end;
-  }
-  .userIdenty {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  .main_content {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 120px;
-  }
+
+
   .terms_area {
     margin-top: 50px;
   }
 }
 
 @media only screen and (max-width: 860px) {
-  .userContact {
-    display: block;
-    margin-top: 0px;
-    gap: 20px;
-    justify-content: end;
-  }
-  .user-soical {
-    margin-bottom: 0;
-    justify-content: start;
-  }
-  .main_content {
-    width: 100%;
-    margin: 120px auto;
-  }
-  .terms_area {
-    margin-top: 50px;
+
+
+  .texts {
+    flex-direction: column;
   }
 }
 
@@ -310,20 +280,24 @@ body {
   .terms table thead {
     display: none;
   }
+
   .terms tr {
     margin-bottom: 20px;
   }
+
   .terms table tbody,
   .terms tr,
   .terms td {
     display: block;
     width: 100%;
   }
+
   .terms table tr td {
     text-align: right;
     padding-right: 50px;
     position: relative;
   }
+
   .terms td::before {
     content: attr(data-lable);
     position: absolute;
@@ -333,71 +307,94 @@ body {
     color: navy;
     font-weight: 700;
   }
+
   .company_logo h2 {
     font-size: 16px;
+    text-align: center;
   }
+
   .total_deposite {
     display: block;
     text-align: center;
   }
+
+  .user_info_area {
+    display: block;
+    text-align: center;
+
+  }
+
+  .content_header {
+    display: block;
+    text-align: center;
+  }
+
+  .user_info_left p {
+    font-size: 14px;
+  }
+
+  .user_info_right p {
+    font-size: 14px;
+  }
+
+
 }
+
 @media only screen and (max-width: 460px) {
   .usearArea {
     display: block;
   }
-  .userIdenty {
-    display: block;
-  }
-  .userInfo h2 {
-    text-align: center;
-  }
-  .userInfo p {
-    text-align: center;
-  }
-  .sidebar {
-    height: 230px;
-  }
-  .user-soical {
-    display: flex;
-    justify-content: center;
-  }
+
+
+
   .declaration h2 {
     margin-top: 50px;
   }
+
   .main_content {
     width: 100%;
-    margin: 230px auto;
+    margin: 0px auto;
   }
+
   .terms_area {
     padding: 5px;
   }
+
   .terms td::before {
     padding-left: 5px;
     font-size: 14px;
     color: navy;
     font-weight: 600;
   }
+
   .terms table tr td {
     padding-right: 5px;
   }
+
   .monthDetails h2 {
     font-size: 14px;
     font-weight: 600;
   }
+
   .terms_area h2 {
     font-size: 14px;
     font-weight: 600;
   }
+
   .declaration h2 {
     font-size: 18px;
   }
+
   .content_header {
     padding: 10px;
     display: block;
   }
+
   .total_deposite {
-    margin-top: 20px;
+    margin-top: 5px;
     display: flex;
-    justify-content: centers;
+    justify-content: center;
   }
+
+
 }
