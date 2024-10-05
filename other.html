@@ -74,6 +74,27 @@
 
 
 
+        .mobileViewHero {
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 80vh;
+        }
+
+
+        .hero_contentMobile {
+            position: absolute;
+            bottom: 20%;
+            left: -50%;
+            transform: translateX(50%);
+            width: 100%;
+            text-align: center;
+        }
+
+
         /* -------slider------ */
         .swiper {
             width: 100%;
@@ -178,18 +199,27 @@
                 display: none;
             }
 
+            .mobileViewHero {
+                display: flex;
+            }
+
+            .deskTopViewHero {
+                display: none;
+            }
         }
 
         @media (min-width: 768px) {
             .quiz-back-mobile {
                 display: none;
             }
+
+
+            .mobileViewHero {
+                display: none;
+            }
         }
 
-
-
-
-        /* ------------tailwind------------ */
+        /* =============tailwind============= */
         *,
         ::before,
         ::after {
@@ -787,6 +817,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             visibility: visible;
         }
 
+        .collapse {
+            visibility: collapse;
+        }
+
         .absolute {
             position: absolute;
         }
@@ -797,6 +831,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
         .left-\[50\%\] {
             left: 50%;
+        }
+
+        .order-first {
+            order: -9999;
         }
 
         .order-last {
@@ -811,6 +849,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             grid-column: span 12 / span 12;
         }
 
+        .col-span-4 {
+            grid-column: span 4 / span 4;
+        }
+
         .col-span-5 {
             grid-column: span 5 / span 5;
         }
@@ -823,6 +865,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             grid-column: span 7 / span 7;
         }
 
+        .col-span-8 {
+            grid-column: span 8 / span 8;
+        }
+
         .mx-auto {
             margin-left: auto;
             margin-right: auto;
@@ -833,6 +879,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             margin-bottom: 0.25rem;
         }
 
+        .my-10 {
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
         .my-16 {
             margin-top: 4rem;
             margin-bottom: 4rem;
@@ -841,6 +892,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         .my-4 {
             margin-top: 1rem;
             margin-bottom: 1rem;
+        }
+
+        .mb-0 {
+            margin-bottom: 0px;
         }
 
         .mb-2 {
@@ -859,6 +914,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             margin-bottom: 1.5rem;
         }
 
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .mt-0 {
+            margin-top: 0px;
+        }
+
         .mt-10 {
             margin-top: 2.5rem;
         }
@@ -869,6 +932,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
         .mt-2 {
             margin-top: 0.5rem;
+        }
+
+        .mt-20 {
+            margin-top: 5rem;
         }
 
         .mt-3 {
@@ -887,6 +954,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             margin-top: 1.5rem;
         }
 
+        .mt-8 {
+            margin-top: 2rem;
+        }
+
         .mt-\[10px\] {
             margin-top: 10px;
         }
@@ -895,12 +966,24 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             display: block;
         }
 
+        .inline-block {
+            display: inline-block;
+        }
+
         .flex {
             display: flex;
         }
 
+        .table {
+            display: table;
+        }
+
         .grid {
             display: grid;
+        }
+
+        .contents {
+            display: contents;
         }
 
         .hidden {
@@ -909,6 +992,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
         .h-10 {
             height: 2.5rem;
+        }
+
+        .h-16 {
+            height: 4rem;
+        }
+
+        .h-20 {
+            height: 5rem;
         }
 
         .h-\[10px\] {
@@ -940,16 +1031,40 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             width: 2.5rem;
         }
 
+        .w-11 {
+            width: 2.75rem;
+        }
+
         .w-11\/12 {
             width: 91.666667%;
+        }
+
+        .w-16 {
+            width: 4rem;
+        }
+
+        .w-20 {
+            width: 5rem;
+        }
+
+        .w-3 {
+            width: 0.75rem;
         }
 
         .w-full {
             width: 100%;
         }
 
+        .border-collapse {
+            border-collapse: collapse;
+        }
+
         .transform {
             transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .resize {
+            resize: both;
         }
 
         .grid-cols-12 {
@@ -958,6 +1073,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
         .grid-cols-2 {
             grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .grid-cols-4 {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
         }
 
         .flex-col {
@@ -988,12 +1111,24 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             gap: 2.5rem;
         }
 
+        .gap-16 {
+            gap: 4rem;
+        }
+
         .gap-2 {
             gap: 0.5rem;
         }
 
+        .gap-20 {
+            gap: 5rem;
+        }
+
         .gap-3 {
             gap: 0.75rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
         }
 
         .gap-5 {
@@ -1046,6 +1181,21 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             background-color: rgb(255 255 255 / var(--tw-bg-opacity));
         }
 
+        .px-0 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .px-10 {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+
+        .px-16 {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
         .px-2 {
             padding-left: 0.5rem;
             padding-right: 0.5rem;
@@ -1091,6 +1241,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             padding-bottom: 1rem;
         }
 
+        .py-6 {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
         .pb-4 {
             padding-bottom: 1rem;
         }
@@ -1101,6 +1256,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
         .pr-5 {
             padding-right: 1.25rem;
+        }
+
+        .pt-0 {
+            padding-top: 0px;
         }
 
         .pt-10 {
@@ -1131,6 +1290,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         .text-3xl {
             font-size: 1.875rem;
             line-height: 2.25rem;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        .text-5xl {
+            font-size: 3rem;
+            line-height: 1;
         }
 
         .text-base {
@@ -1200,6 +1369,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             text-decoration-line: underline;
         }
 
+        .outline {
+            outline-style: solid;
+        }
+
+        .filter {
+            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+
         .transition {
             transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
             transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1228,10 +1405,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             .md\:col-span-5 {
                 grid-column: span 5 / span 5;
-            }
-
-            .md\:col-span-6 {
-                grid-column: span 6 / span 6;
             }
 
             .md\:col-span-7 {
@@ -1271,8 +1444,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 width: 4rem;
             }
 
-            .md\:grid-cols-12 {
-                grid-template-columns: repeat(12, minmax(0, 1fr));
+            .md\:w-full {
+                width: 100%;
             }
 
             .md\:grid-cols-2 {
@@ -1291,13 +1464,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 gap: 1.25rem;
             }
 
+            .md\:px-10 {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+            }
+
             .md\:px-6 {
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
-            }
-
-            .md\:text-left {
-                text-align: left;
             }
 
             .md\:text-lg {
@@ -1307,6 +1481,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         }
 
         @media (min-width: 1024px) {
+            .lg\:left-\[40\%\] {
+                left: 40%;
+            }
+
             .lg\:left-\[60\%\] {
                 left: 60%;
             }
@@ -1336,6 +1514,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 margin-bottom: 2rem;
             }
 
+            .lg\:mt-0 {
+                margin-top: 0px;
+            }
+
             .lg\:mt-10 {
                 margin-top: 2.5rem;
             }
@@ -1348,12 +1530,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 height: 5rem;
             }
 
-            .lg\:h-\[60vh\] {
-                height: 60vh;
+            .lg\:h-\[20vh\] {
+                height: 20vh;
             }
 
-            .lg\:h-full {
-                height: 100%;
+            .lg\:h-\[60vh\] {
+                height: 60vh;
             }
 
             .lg\:w-20 {
@@ -1364,12 +1546,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 width: 60%;
             }
 
-            .lg\:w-\[10px\] {
-                width: 10px;
-            }
-
-            .lg\:w-\[90\%\] {
-                width: 90%;
+            .lg\:grid-cols-12 {
+                grid-template-columns: repeat(12, minmax(0, 1fr));
             }
 
             .lg\:grid-cols-3 {
@@ -1394,6 +1572,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             .lg\:gap-4 {
                 gap: 1rem;
+            }
+
+            .lg\:px-16 {
+                padding-left: 4rem;
+                padding-right: 4rem;
             }
 
             .lg\:py-6 {
@@ -1452,12 +1635,28 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 margin-top: 5rem;
             }
 
+            .xl\:grid {
+                display: grid;
+            }
+
             .xl\:h-\[80vh\] {
                 height: 80vh;
             }
 
+            .xl\:h-full {
+                height: 100%;
+            }
+
             .xl\:w-11\/12 {
                 width: 91.666667%;
+            }
+
+            .xl\:w-\[10px\] {
+                width: 10px;
+            }
+
+            .xl\:w-\[90\%\] {
+                width: 90%;
             }
 
             .xl\:grid-cols-4 {
@@ -1466,6 +1665,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             .xl\:gap-10 {
                 gap: 2.5rem;
+            }
+
+            .xl\:gap-20 {
+                gap: 5rem;
             }
 
             .xl\:px-0 {
@@ -1489,63 +1692,76 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             }
         }
 
-        /* ------------tailwind------------ */
+        /* =============tailwind============= */
     </style>
 </head>
 
 <body>
 
     <!-- ==================Hero  start=============== -->
-    <section>
-        <div class=" hero-back h-[15vh] md:h-[30vh] lg:h-[60vh] xl:h-[80vh]"
+    <section class=" deskTopViewHero">
+        <div class=" hero-back h-[15vh] md:h-[30vh] lg:h-[20vh] xl:h-[80vh]"
             style=" background-image: url('https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/hero.jpg');">
-            <div class=" hero_content left-[50%] md:left-[70%] lg:left-[60%] xl:left-[50%]">
+            <div class=" hero_content left-[50%] md:left-[70%] lg:left-[40%] xl:left-[50%]">
                 <h2 class=" lg:text-5xl text-black ">bhave™ <strong class="text-white ">ANTI-AGING</strong></h2>
                 <h2 class=" lg:text-5xl text-black  font-bold">RESCUE THERAPY</h2>
             </div>
         </div>
     </section>
+    <!-- ===========mobile viwe header========== -->
+    <section class="">
+        <div class=" mobileViewHero h-[15vh] md:h-[30vh] lg:h-[60vh] xl:h-[80vh]"
+            style=" background-image: url('https://bhavehair.com.au/cdn/shop/files/antiaging_-_Mobile_800x.png?v=1707872337');">
+            <div class=" hero_contentMobile ">
+                <h2 class=" text-xl text-white font-bold  text-center">bhave™ <strong
+                        class="text-white ">ANTI-AGING</strong>
+                </h2>
+                <h2 class=" text-xl text-white  font-bold inline-block text-center">RESCUE THERAPY</h2>
+            </div>
+        </div>
+    </section>
+    <!-- ===========mobile viwe header========== -->
     <!-- ==================Hero  end=============== -->
     <!-- =============TRANSFORM start======== -->
     <section class="bg-[#FFF7F8]">
         <div class="container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-3 xl:px-0">
-                <div class="md:grid grid-cols-12 gap-5 xl:gap-10 py-4 lg:py-6 xl:py-10">
+            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
+                <div class="lg:grid grid-cols-12 gap-5 xl:gap-10 py-4 lg:py-6 xl:py-10">
                     <div class="md:col-span-5 lg:col-span-4 xl:col-span-6">
                         <div class="">
                             <h2
-                                class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center md:text-left mb-2 lg:mb-0">
+                                class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
                                 TRANSFORM YOUR
                             </h2>
                             <h2
-                                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center md:text-left mb-2 lg:mb-0">
+                                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
                                 HAIR INTO ITS
                             </h2>
                             <h2
-                                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center md:text-left mb-2 lg:mb-0">
+                                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
                                 STRONGEST
                             </h2>
                             <h2
-                                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center md:text-left mb-2 lg:mb-0">
+                                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
                                 HEALTHIEST STATE
                             </h2>
                         </div>
                     </div>
-                    <div class="md:col-span-7 lg:col-span-8  xl:col-span-6 mt-10 md:mt-0">
+                    <div class="md:col-span-7 lg:col-span-8  xl:col-span-6 mt-10 lg:mt-0">
                         <div class=" mb-4 lg:mb-8">
                             <h2 class="text-2xl lg:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
                                 REDISCOVER YOUTHFUL VIBRANCE
                             </h2>
                         </div>
                         <div class=" mb-3 lg:mb-8">
-                            <p class="text-base text-black pb-4 text-justify lg:text-left">
+                            <p class="text-base text-black pb-4 text-left">
                                 Let's talk hair. Not just any hair - YOUR hair. It's not just
                                 about looking good; it's about feeling fabulous, right? But
                                 here's the thing; damaged hair can be a sneaky little bugger,
                                 subtly aging us without even a polite warning. It's like,
                                 hello, who invited you to this party?
                             </p>
-                            <p class="text-base text-black pb-4 text-justify lg:text-left">
+                            <p class="text-base text-black pb-4 text-left">
                                 In our quest for beauty, our precious locks often get the
                                 short end of the stick. Heatl styling, the sun playing tough,
                                 overzealous colouring and those oh-so-tempting chemical
@@ -1557,7 +1773,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                             <h2 class="text-2xl lg:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
                                 TURN BACK TIME FOR YOUR HAIR
                             </h2>
-                            <p class="text-base text-black pb-4 text-justify md:text-left my-1 md:my-4">
+                            <p class="text-base text-black pb-4 text-left my-1 md:my-4">
                                 Enter bhave™ Rescue Therapy: an in-salon revolution that metamorphoses damaged hair into
                                 a state of
                                 awe-inspiring splendour.
@@ -1573,9 +1789,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     <!-- ================TEMPORARY SOLUTION START============= -->
     <section class="mt-5 xl:mt-20">
         <div class="container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-3 xl:px-0">
+            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
                 <div class=" grid grid-cols-12 gap-5 md:gap-10">
-                    <div class=" col-span-12 md:col-span-6 order-last md:order-first">
+                    <div class=" col-span-12 lg:col-span-6 order-last md:order-first">
                         <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
                             MORE THAN JUST A
                         </h2>
@@ -1583,15 +1799,17 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                             TEMPORARY SOLUTION: </h2>
                         <div class=" mt-4">
                             <div class="">
-                                <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  mb-2 lg:mb-0">
+                                <h2
+                                    class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-medium  mb-2 lg:mb-0">
                                     A COMPLETE JOURNEY</h2>
-                                <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  mb-2 lg:mb-0">
+                                <h2
+                                    class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-medium  mb-2 lg:mb-0">
                                     TO COMPREHENSIVE</h2>
-                                <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none mb-2 lg:mb-0">
+                                <h2
+                                    class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  font-medium  mb-2 lg:mb-0">
                                     REJUVENATION</h2>
                                 <div class=" mt-4">
-                                    <p class="text-base text-black pb-4 text-justify lg:text-left">At the heart of
-                                        bhave™ Rescue Therapy
+                                    <p class="text-base text-black pb-4 text-left">At the heart of bhave™ Rescue Therapy
                                         is a multi-faceted approach,
                                         offering three crucial benefits:
                                         <strong>anti-aging,intensive repair</strong> and <strong>proactive
@@ -1608,7 +1826,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                         beauty of your
                                         hair.
                                     </p>
-                                    <div class=" mt-4 lg:mt-10">
+                                    <div class=" mt-8 lg:mt-10">
                                         <a href="#"
                                             class=" bg-[#F7B4C0] hover:bg-[#f7b4c0cb] px-6 py-2 rounded-full text-lg">
                                             shop rescue
@@ -1620,7 +1838,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                         </div>
 
                     </div>
-                    <div class="mt-10 md:mt-0 col-span-12 md:col-span-6 ">
+                    <div class="mt-10 md:mt-0 col-span-12 lg:col-span-6 ">
                         <div class="swiper mySwiper ">
                             <div class="swiper-wrapper w-full ">
                                 <div class="swiper-slide">
@@ -1645,11 +1863,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     </section>
     <!-- ================TEMPORARY SOLUTION END============= -->
     <!-- =================REVITALISE START=============== -->
-    <section class=" mt-5 md:mt-16 xl:mt-20">
+    <section class=" mt-10 md:mt-16 xl:mt-20">
         <div class="container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-3 xl:px-0">
-                <div class=" md:grid grid-cols-12 gap-10 lg:gap-20">
-                    <div class=" md:col-span-6">
+            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
+                <div class=" lg:grid grid-cols-12 gap-10 lg:gap-20">
+                    <div class=" lg:col-span-6">
                         <div class="grid grid-cols-12 gap-2 lg:gap-4">
                             <div class=" col-span-6">
                                 <img class=" w-full"
@@ -1669,7 +1887,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                             </div>
                         </div>
                     </div>
-                    <div class=" mt-10 md:mt-0 md:col-span-6">
+                    <div class=" mt-10 lg:mt-0 lg:col-span-6">
                         <div class="">
                             <h2
                                 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
@@ -1681,7 +1899,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                         </div>
 
                         <div class="">
-                            <p class="text-base text-black my-4 text-justify lg:text-left">
+                            <p class="text-base text-black my-4 text-left">
                                 Got hair colour that’s more ‘meh’ than ‘yay’? Reawaken your hair’s brilliance. Transform
                                 dull tones into
                                 a radiant
@@ -1709,7 +1927,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                         </div>
 
                         <div class="">
-                            <p class="text-base text-black my-4 text-justify lg:text-left">
+                            <p class="text-base text-black my-4 text-left">
                                 Refined smoothness awaits. Damaged hair often leads to frustrating frizz, split ends,
                                 and a rough
                                 texture. <strong>bhave™ Rescue
@@ -1728,25 +1946,25 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     <!-- =================REVITALISE END=============== -->
 
     <!-- ===================COMBAT start============== -->
-    <section class=" mt-5 md:mt-16 xl:mt-20">
+    <section class=" mt-10 md:mt-16 xl:mt-20">
         <div class="container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-3 xl:px-0 h-full">
-                <div class="grid md:grid-cols-12 gap-3 md:gap-10 lg:gap-20">
-                    <div class="col-span-12 md:col-span-6 content-center order-last md:order-first">
+            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0 h-full">
+                <div class="grid lg:grid-cols-12 gap-3 lg:gap-10 xl:gap-20">
+                    <div class="col-span-12 lg:col-span-6 content-center order-last md:order-first mt-10 md:mt-0">
                         <div class="">
                             <div class="">
                                 <div class="">
                                     <div class="">
                                         <h2
-                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center md:text-left mb-2 lg:mb-0">
+                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-left mb-2 lg:mb-0">
                                             COMBAT DRYNESS
                                         </h2>
                                         <h2
-                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  text-center md:text-left mb-2 lg:mb-0">
+                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  text-left mb-2 lg:mb-0">
                                             AND BRITTLENESS</h2>
                                     </div>
                                     <div class="">
-                                        <p class="text-base text-black my-4 text-justify lg:text-left">
+                                        <p class="text-base text-black my-4 text-left">
                                             Embark on a journey of hydration and strength. Revitalise dry and brittle
                                             hair, common signs of
                                             damage,
@@ -1764,60 +1982,60 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                             class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
                                             REPAIR</h2>
                                         <h2
-                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  mb-2 lg:mb-0">
+                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
                                             REJUVENATE</h2>
 
                                         <h2
                                             class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none mb-2 lg:mb-0">
-                                            PROTECT
+                                            <strong>PROTECT</strong>
                                         </h2>
 
                                     </div>
                                     <div class="">
-                                        <p class="text-base text-black my-4 text-justify lg:text-left">
-                                            Embark on a journey of hydration and strength. Revitalise dry and brittle
-                                            hair, common signs of
-                                            damage,
-                                            into a soft,
-                                            silky testament of health and vitality. Rejuvenation begins with restoring
-                                            your hair’s inherent
-                                            elasticity, enhancing
-                                            its strength, and shielding against future damage.
+                                        <p class="text-base text-black my-4 text-left">
+                                            <strong>bhave™ Rescue</strong>
+                                            Therapy transcends mere repair; it embodies total hair rejuvenation. This
+                                            premier
+                                            in- salon experience
+                                            restores your hair's natural elasticity, revives colour vibrancy, and
+                                            reintroduces that enviable
+                                            shine. It ensures your
+                                            locks are not just manageable but vibrantly alive
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-12 md:col-span-6 w-full">
+                    <div class="col-span-12 lg:col-span-6 w-full">
                         <div class="grid grid-cols-12  justify-end gap-3">
                             <div class=" col-span-6">
-                                <img class=" object-fit-cover"
+                                <img class=" md:w-full object-fit-cover"
                                     src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here01.png"
                                     alt="">
                             </div>
                             <div class=" col-span-6">
-                                <img class="  object-fit-cover"
+                                <img class="  md:w-full object-fit-cover"
                                     src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here02.png"
                                     alt="">
                             </div>
                             <div class=" col-span-6">
-                                <img class=" object-fit-cover"
+                                <img class=" md:w-full object-fit-cover"
                                     src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here03.png"
                                     alt="">
                             </div>
                             <div class=" col-span-6">
-                                <img class=" object-fit-cover"
+                                <img class=" md:w-full object-fit-cover"
                                     src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here04.png"
                                     alt="">
                             </div>
                             <div class=" col-span-6">
-                                <img class="object-fit-cover"
+                                <img class="md:w-full object-fit-cover"
                                     src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here05.png"
                                     alt="">
                             </div>
                             <div class=" col-span-6">
-                                <img class=" object-fit-cover"
+                                <img class=" md:w-full object-fit-cover"
                                     src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here06.png"
                                     alt="">
                             </div>
@@ -1835,7 +2053,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         <div class=" bg-[#FFD7E2] h-[1px]"></div>
         <div class="mt-10 lg:my-10">
             <div class="container mx-auto">
-                <div class="xl:w-11/12 mx-auto px-3 xl:px-0">
+                <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
                     <div class="md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-5 lg:gap-16">
                         <div class=" mb-6 lg:mb-0">
                             <div class=" flex flex-col items-center">
@@ -1952,9 +2170,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
         <div class="bg-[#F3F3F3] pt-6 lg:pt-0  mt-16">
             <div class=" container mx-auto">
-                <div class=" lg:w-[90%] mx-auto">
-                    <div class="lg:grid grid-cols-12">
-                        <div class=" col-span-5 pt-10 px-3">
+                <div class=" xl:w-[90%] mx-auto">
+                    <div class="xl:grid grid-cols-12">
+                        <div class=" col-span-5 pt-10 px-3 md:px-10 lg:px-16 xl:px-0">
                             <div class=" grid grid-cols-12 items-center">
                                 <div class=" col-span-7">
                                     <h2
@@ -1979,10 +2197,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
                         </div>
                         <div class="col-span-1 flex justify-center">
-                            <div class=" bg-white w-full h-[10px] lg:h-full lg:w-[10px]">
+                            <div class=" bg-white w-full h-[10px] xl:h-full xl:w-[10px]">
                             </div>
                         </div>
-                        <div class=" col-span-6 px-3  pt-10">
+                        <div class=" col-span-6 px-3 md:px-10 lg:px-16 xl:px-0  pt-10">
                             <div class=" grid grid-cols-12 items-center">
                                 <div class=" col-span-7">
                                     <h2 class="text-xl  lg:text-2xl xl:text-3xl text-black leading-none ">
@@ -2459,7 +2677,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     <!-- ==============BOUGHT START============ -->
     <section class="my-16">
         <div class=" container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-3 xl:px-0">
+            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
                 <h2
                     class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center  mb-2 lg:mb-0">
                     CUSTOMERS ALSO <strong>BOUGHT</strong></h2>
@@ -2708,10 +2926,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             </div>
         </div>
     </section>
-
-
-
-
     <!-- ================quiz end============= -->
 
 
