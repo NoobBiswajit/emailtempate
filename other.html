@@ -2,344 +2,344 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./src/output.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./src/output.css" rel="stylesheet" />
 
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: "Avenir LT Std", sans-serif;
-            color: rgb(0, 0, 0);
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Avenir LT Std", sans-serif;
+      color: rgb(0, 0, 0);
+    }
 
-        .productImg {
-            position: relative;
-        }
+    .productImg {
+      position: relative;
+    }
 
-        .approveIcon {
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 11111;
-        }
+    .approveIcon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 11111;
+    }
 
-        .productCard:hover .productImg1 {
-            display: none;
-        }
+    .productCard:hover .productImg1 {
+      display: none;
+    }
 
-        .productImg2 {
-            display: none;
-        }
+    .productImg2 {
+      display: none;
+    }
 
-        .productCard:hover .productImg2 {
-            display: block;
-        }
+    .productCard:hover .productImg2 {
+      display: block;
+    }
 
-        .quiz-back {
-            position: relative;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+    .quiz-back {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-        .quiz-back-mobile {
-            position: relative;
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 80vh;
-        }
+    .quiz-back-mobile {
+      position: relative;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 80vh;
+    }
 
-        .hero-back {
-            position: relative;
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 100%;
-
-
-        }
-
-        .hero_content {
-            position: absolute;
-            /* left: 50%; */
-            top: 50%;
-            transform: translateY(-50%);
-        }
+    .hero-back {
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
 
 
+    }
 
-        .mobileViewHero {
-            width: 100%;
-            position: relative;
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 80vh;
-        }
-
-
-        .hero_contentMobile {
-            position: absolute;
-            bottom: 20%;
-            left: -50%;
-            transform: translateX(50%);
-            width: 100%;
-            text-align: center;
-        }
-
-
-        /* -------slider------ */
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* -------slider------ */
-
-
-        /* ==========accordion start========== */
+    .hero_content {
+      position: absolute;
+      /* left: 50%; */
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
 
 
-        .collapsibles-wrapper .collapsible-trigger-btn {
-            background: none;
-            width: 100%;
-            text-transform: uppercase;
-            border: none;
-            cursor: pointer;
-            padding: 6px 0;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #979797;
-            position: relative;
-        }
-
-        .collapsibles-wrapper .collapsible-trigger-btn::after {
-            content: "+";
-            font-size: 20px;
-            font-weight: 400;
-            position: absolute;
-            right: -10px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .collapsibles-wrapper.collapsible-tab__open .collapsible-trigger-btn::after {
-            content: "+";
-            transform: rotate(45deg);
-            font-size: 20px;
-
-        }
-
-        .collapsibles-wrapper .collapsible-content {
-            visibility: hidden;
-            opacity: 0;
-            transition: all 0.2s linear;
-        }
-
-        .collapsibles-wrapper.collapsible-tab__open .collapsible-content {
-            visibility: visible;
-            opacity: 1;
-        }
+    .mobileViewHero {
+      width: 100%;
+      position: relative;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 80vh;
+    }
 
 
-        /* ==========accordion end========== */
-
-        .border-middel {
-            position: relative;
-        }
-
-        .border_section {
-            position: absolute;
-            height: 100%;
-            width: 5px;
-            right: 0;
-            top: 0;
-        }
+    .hero_contentMobile {
+      position: absolute;
+      bottom: 10%;
+      left: -50%;
+      transform: translateX(50%);
+      width: 100%;
+      text-align: center;
+    }
 
 
-        .expert_area {
-            position: relative;
-        }
+    /* -------slider------ */
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
-        .expert_image {
-            position: absolute;
-            height: 100%;
-            bottom: 0;
-            right: 0;
-        }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .color_safe {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-        }
+    /* -------slider------ */
+
+
+    /* ==========accordion start========== */
 
 
 
-        /* ============tailwind=========== */
-        *,
-        ::before,
-        ::after {
-            --tw-border-spacing-x: 0;
-            --tw-border-spacing-y: 0;
-            --tw-translate-x: 0;
-            --tw-translate-y: 0;
-            --tw-rotate: 0;
-            --tw-skew-x: 0;
-            --tw-skew-y: 0;
-            --tw-scale-x: 1;
-            --tw-scale-y: 1;
-            --tw-pan-x: ;
-            --tw-pan-y: ;
-            --tw-pinch-zoom: ;
-            --tw-scroll-snap-strictness: proximity;
-            --tw-gradient-from-position: ;
-            --tw-gradient-via-position: ;
-            --tw-gradient-to-position: ;
-            --tw-ordinal: ;
-            --tw-slashed-zero: ;
-            --tw-numeric-figure: ;
-            --tw-numeric-spacing: ;
-            --tw-numeric-fraction: ;
-            --tw-ring-inset: ;
-            --tw-ring-offset-width: 0px;
-            --tw-ring-offset-color: #fff;
-            --tw-ring-color: rgb(59 130 246 / 0.5);
-            --tw-ring-offset-shadow: 0 0 #0000;
-            --tw-ring-shadow: 0 0 #0000;
-            --tw-shadow: 0 0 #0000;
-            --tw-shadow-colored: 0 0 #0000;
-            --tw-blur: ;
-            --tw-brightness: ;
-            --tw-contrast: ;
-            --tw-grayscale: ;
-            --tw-hue-rotate: ;
-            --tw-invert: ;
-            --tw-saturate: ;
-            --tw-sepia: ;
-            --tw-drop-shadow: ;
-            --tw-backdrop-blur: ;
-            --tw-backdrop-brightness: ;
-            --tw-backdrop-contrast: ;
-            --tw-backdrop-grayscale: ;
-            --tw-backdrop-hue-rotate: ;
-            --tw-backdrop-invert: ;
-            --tw-backdrop-opacity: ;
-            --tw-backdrop-saturate: ;
-            --tw-backdrop-sepia: ;
-            --tw-contain-size: ;
-            --tw-contain-layout: ;
-            --tw-contain-paint: ;
-            --tw-contain-style: ;
-        }
+    .collapsibles-wrapper .collapsible-trigger-btn {
+      background: none;
+      width: 100%;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      padding: 6px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #979797;
+      position: relative;
+    }
 
-        ::backdrop {
-            --tw-border-spacing-x: 0;
-            --tw-border-spacing-y: 0;
-            --tw-translate-x: 0;
-            --tw-translate-y: 0;
-            --tw-rotate: 0;
-            --tw-skew-x: 0;
-            --tw-skew-y: 0;
-            --tw-scale-x: 1;
-            --tw-scale-y: 1;
-            --tw-pan-x: ;
-            --tw-pan-y: ;
-            --tw-pinch-zoom: ;
-            --tw-scroll-snap-strictness: proximity;
-            --tw-gradient-from-position: ;
-            --tw-gradient-via-position: ;
-            --tw-gradient-to-position: ;
-            --tw-ordinal: ;
-            --tw-slashed-zero: ;
-            --tw-numeric-figure: ;
-            --tw-numeric-spacing: ;
-            --tw-numeric-fraction: ;
-            --tw-ring-inset: ;
-            --tw-ring-offset-width: 0px;
-            --tw-ring-offset-color: #fff;
-            --tw-ring-color: rgb(59 130 246 / 0.5);
-            --tw-ring-offset-shadow: 0 0 #0000;
-            --tw-ring-shadow: 0 0 #0000;
-            --tw-shadow: 0 0 #0000;
-            --tw-shadow-colored: 0 0 #0000;
-            --tw-blur: ;
-            --tw-brightness: ;
-            --tw-contrast: ;
-            --tw-grayscale: ;
-            --tw-hue-rotate: ;
-            --tw-invert: ;
-            --tw-saturate: ;
-            --tw-sepia: ;
-            --tw-drop-shadow: ;
-            --tw-backdrop-blur: ;
-            --tw-backdrop-brightness: ;
-            --tw-backdrop-contrast: ;
-            --tw-backdrop-grayscale: ;
-            --tw-backdrop-hue-rotate: ;
-            --tw-backdrop-invert: ;
-            --tw-backdrop-opacity: ;
-            --tw-backdrop-saturate: ;
-            --tw-backdrop-sepia: ;
-            --tw-contain-size: ;
-            --tw-contain-layout: ;
-            --tw-contain-paint: ;
-            --tw-contain-style: ;
-        }
+    .collapsibles-wrapper .collapsible-trigger-btn::after {
+      content: "+";
+      font-size: 20px;
+      font-weight: 400;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
-        /*
+    .collapsibles-wrapper.collapsible-tab__open .collapsible-trigger-btn::after {
+      content: "+";
+      transform: rotate(45deg);
+      font-size: 20px;
+
+    }
+
+    .collapsibles-wrapper .collapsible-content {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.2s linear;
+    }
+
+    .collapsibles-wrapper.collapsible-tab__open .collapsible-content {
+      visibility: visible;
+      opacity: 1;
+    }
+
+
+    /* ==========accordion end========== */
+
+    .border-middel {
+      position: relative;
+    }
+
+    .border_section {
+      position: absolute;
+      height: 100%;
+      width: 5px;
+      right: 0;
+      top: 0;
+    }
+
+
+    .expert_area {
+      position: relative;
+    }
+
+    .expert_image {
+      position: absolute;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+    }
+
+    .color_safe {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    }
+
+
+
+    /* ============tailwind=========== */
+    *,
+    ::before,
+    ::after {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position: ;
+      --tw-gradient-via-position: ;
+      --tw-gradient-to-position: ;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia: ;
+      --tw-contain-size: ;
+      --tw-contain-layout: ;
+      --tw-contain-paint: ;
+      --tw-contain-style: ;
+    }
+
+    ::backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position: ;
+      --tw-gradient-via-position: ;
+      --tw-gradient-to-position: ;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia: ;
+      --tw-contain-size: ;
+      --tw-contain-layout: ;
+      --tw-contain-paint: ;
+      --tw-contain-style: ;
+    }
+
+    /*
 ! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
 */
 
-        /*
+    /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
-        *,
-        ::before,
-        ::after {
-            box-sizing: border-box;
-            /* 1 */
-            border-width: 0;
-            /* 2 */
-            border-style: solid;
-            /* 2 */
-            border-color: #e5e7eb;
-            /* 2 */
-        }
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      /* 1 */
+      border-width: 0;
+      /* 2 */
+      border-style: solid;
+      /* 2 */
+      border-color: #e5e7eb;
+      /* 2 */
+    }
 
-        ::before,
-        ::after {
-            --tw-content: '';
-        }
+    ::before,
+    ::after {
+      --tw-content: '';
+    }
 
-        /*
+    /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
@@ -349,2625 +349,2477 @@
 7. Disable tap highlights on iOS
 */
 
-        html,
-        :host {
-            line-height: 1.5;
-            /* 1 */
-            -webkit-text-size-adjust: 100%;
-            /* 2 */
-            -moz-tab-size: 4;
-            /* 3 */
-            -o-tab-size: 4;
-            tab-size: 4;
-            /* 3 */
-            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            /* 4 */
-            font-feature-settings: normal;
-            /* 5 */
-            font-variation-settings: normal;
-            /* 6 */
-            -webkit-tap-highlight-color: transparent;
-            /* 7 */
-        }
+    html,
+    :host {
+      line-height: 1.5;
+      /* 1 */
+      -webkit-text-size-adjust: 100%;
+      /* 2 */
+      -moz-tab-size: 4;
+      /* 3 */
+      -o-tab-size: 4;
+      tab-size: 4;
+      /* 3 */
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      /* 4 */
+      font-feature-settings: normal;
+      /* 5 */
+      font-variation-settings: normal;
+      /* 6 */
+      -webkit-tap-highlight-color: transparent;
+      /* 7 */
+    }
 
-        /*
+    /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
-        body {
-            margin: 0;
-            /* 1 */
-            line-height: inherit;
-            /* 2 */
-        }
+    body {
+      margin: 0;
+      /* 1 */
+      line-height: inherit;
+      /* 2 */
+    }
 
-        /*
+    /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
 
-        hr {
-            height: 0;
-            /* 1 */
-            color: inherit;
-            /* 2 */
-            border-top-width: 1px;
-            /* 3 */
-        }
+    hr {
+      height: 0;
+      /* 1 */
+      color: inherit;
+      /* 2 */
+      border-top-width: 1px;
+      /* 3 */
+    }
 
-        /*
+    /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
-        abbr:where([title]) {
-            -webkit-text-decoration: underline dotted;
-            text-decoration: underline dotted;
-        }
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted;
+    }
 
-        /*
+    /*
 Remove the default font size and weight for headings.
 */
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-size: inherit;
-            font-weight: inherit;
-        }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
 
-        /*
+    /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
 
-        a {
-            color: inherit;
-            text-decoration: inherit;
-        }
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
 
-        /*
+    /*
 Add the correct font weight in Edge and Safari.
 */
 
-        b,
-        strong {
-            font-weight: bolder;
-        }
+    b,
+    strong {
+      font-weight: bolder;
+    }
 
-        /*
+    /*
 1. Use the user's configured `mono` font-family by default.
 2. Use the user's configured `mono` font-feature-settings by default.
 3. Use the user's configured `mono` font-variation-settings by default.
 4. Correct the odd `em` font sizing in all browsers.
 */
 
-        code,
-        kbd,
-        samp,
-        pre {
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            /* 1 */
-            font-feature-settings: normal;
-            /* 2 */
-            font-variation-settings: normal;
-            /* 3 */
-            font-size: 1em;
-            /* 4 */
-        }
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      /* 1 */
+      font-feature-settings: normal;
+      /* 2 */
+      font-variation-settings: normal;
+      /* 3 */
+      font-size: 1em;
+      /* 4 */
+    }
 
-        /*
+    /*
 Add the correct font size in all browsers.
 */
 
-        small {
-            font-size: 80%;
-        }
+    small {
+      font-size: 80%;
+    }
 
-        /*
+    /*
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 */
 
-        sub,
-        sup {
-            font-size: 75%;
-            line-height: 0;
-            position: relative;
-            vertical-align: baseline;
-        }
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
 
-        sub {
-            bottom: -0.25em;
-        }
+    sub {
+      bottom: -0.25em;
+    }
 
-        sup {
-            top: -0.5em;
-        }
+    sup {
+      top: -0.5em;
+    }
 
-        /*
+    /*
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 3. Remove gaps between table borders by default.
 */
 
-        table {
-            text-indent: 0;
-            /* 1 */
-            border-color: inherit;
-            /* 2 */
-            border-collapse: collapse;
-            /* 3 */
-        }
+    table {
+      text-indent: 0;
+      /* 1 */
+      border-color: inherit;
+      /* 2 */
+      border-collapse: collapse;
+      /* 3 */
+    }
 
-        /*
+    /*
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
 */
 
-        button,
-        input,
-        optgroup,
-        select,
-        textarea {
-            font-family: inherit;
-            /* 1 */
-            font-feature-settings: inherit;
-            /* 1 */
-            font-variation-settings: inherit;
-            /* 1 */
-            font-size: 100%;
-            /* 1 */
-            font-weight: inherit;
-            /* 1 */
-            line-height: inherit;
-            /* 1 */
-            letter-spacing: inherit;
-            /* 1 */
-            color: inherit;
-            /* 1 */
-            margin: 0;
-            /* 2 */
-            padding: 0;
-            /* 3 */
-        }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      /* 1 */
+      font-feature-settings: inherit;
+      /* 1 */
+      font-variation-settings: inherit;
+      /* 1 */
+      font-size: 100%;
+      /* 1 */
+      font-weight: inherit;
+      /* 1 */
+      line-height: inherit;
+      /* 1 */
+      letter-spacing: inherit;
+      /* 1 */
+      color: inherit;
+      /* 1 */
+      margin: 0;
+      /* 2 */
+      padding: 0;
+      /* 3 */
+    }
 
-        /*
+    /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
 
-        button,
-        select {
-            text-transform: none;
-        }
+    button,
+    select {
+      text-transform: none;
+    }
 
-        /*
+    /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Remove default button styles.
 */
 
-        button,
-        input:where([type='button']),
-        input:where([type='reset']),
-        input:where([type='submit']) {
-            -webkit-appearance: button;
-            /* 1 */
-            background-color: transparent;
-            /* 2 */
-            background-image: none;
-            /* 2 */
-        }
+    button,
+    input:where([type='button']),
+    input:where([type='reset']),
+    input:where([type='submit']) {
+      -webkit-appearance: button;
+      /* 1 */
+      background-color: transparent;
+      /* 2 */
+      background-image: none;
+      /* 2 */
+    }
 
-        /*
+    /*
 Use the modern Firefox focus style for all focusable elements.
 */
 
-        :-moz-focusring {
-            outline: auto;
-        }
+    :-moz-focusring {
+      outline: auto;
+    }
 
-        /*
+    /*
 Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
 
-        :-moz-ui-invalid {
-            box-shadow: none;
-        }
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
 
-        /*
+    /*
 Add the correct vertical alignment in Chrome and Firefox.
 */
 
-        progress {
-            vertical-align: baseline;
-        }
+    progress {
+      vertical-align: baseline;
+    }
 
-        /*
+    /*
 Correct the cursor style of increment and decrement buttons in Safari.
 */
 
-        ::-webkit-inner-spin-button,
-        ::-webkit-outer-spin-button {
-            height: auto;
-        }
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
 
-        /*
+    /*
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
 
-        [type='search'] {
-            -webkit-appearance: textfield;
-            /* 1 */
-            outline-offset: -2px;
-            /* 2 */
-        }
+    [type='search'] {
+      -webkit-appearance: textfield;
+      /* 1 */
+      outline-offset: -2px;
+      /* 2 */
+    }
 
-        /*
+    /*
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
-        ::-webkit-search-decoration {
-            -webkit-appearance: none;
-        }
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
 
-        /*
+    /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to `inherit` in Safari.
 */
 
-        ::-webkit-file-upload-button {
-            -webkit-appearance: button;
-            /* 1 */
-            font: inherit;
-            /* 2 */
-        }
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      /* 1 */
+      font: inherit;
+      /* 2 */
+    }
 
-        /*
+    /*
 Add the correct display in Chrome and Safari.
 */
 
-        summary {
-            display: list-item;
-        }
+    summary {
+      display: list-item;
+    }
 
-        /*
+    /*
 Removes the default spacing and border for appropriate elements.
 */
 
-        blockquote,
-        dl,
-        dd,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        hr,
-        figure,
-        p,
-        pre {
-            margin: 0;
-        }
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+      margin: 0;
+    }
 
-        fieldset {
-            margin: 0;
-            padding: 0;
-        }
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
 
-        legend {
-            padding: 0;
-        }
+    legend {
+      padding: 0;
+    }
 
-        ol,
-        ul,
-        menu {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+    ol,
+    ul,
+    menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-        /*
+    /*
 Reset default styling for dialogs.
 */
 
-        dialog {
-            padding: 0;
-        }
+    dialog {
+      padding: 0;
+    }
 
-        /*
+    /*
 Prevent resizing textareas horizontally by default.
 */
 
-        textarea {
-            resize: vertical;
-        }
+    textarea {
+      resize: vertical;
+    }
 
-        /*
+    /*
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-        input::-moz-placeholder,
-        textarea::-moz-placeholder {
-            opacity: 1;
-            /* 1 */
-            color: #9ca3af;
-            /* 2 */
-        }
+    input::-moz-placeholder,
+    textarea::-moz-placeholder {
+      opacity: 1;
+      /* 1 */
+      color: #9ca3af;
+      /* 2 */
+    }
 
-        input::placeholder,
-        textarea::placeholder {
-            opacity: 1;
-            /* 1 */
-            color: #9ca3af;
-            /* 2 */
-        }
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      /* 1 */
+      color: #9ca3af;
+      /* 2 */
+    }
 
-        /*
+    /*
 Set the default cursor for buttons.
 */
 
-        button,
-        [role="button"] {
-            cursor: pointer;
-        }
+    button,
+    [role="button"] {
+      cursor: pointer;
+    }
 
-        /*
+    /*
 Make sure disabled buttons don't get the pointer cursor.
 */
 
-        :disabled {
-            cursor: default;
-        }
+    :disabled {
+      cursor: default;
+    }
 
-        /*
+    /*
 1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
 2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
 
-        img,
-        svg,
-        video,
-        canvas,
-        audio,
-        iframe,
-        embed,
-        object {
-            display: block;
-            /* 1 */
-            vertical-align: middle;
-            /* 2 */
-        }
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      display: block;
+      /* 1 */
+      vertical-align: middle;
+      /* 2 */
+    }
 
-        /*
+    /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
-        img,
-        video {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Make elements with the HTML hidden attribute stay hidden by default */
-
-        [hidden] {
-            display: none;
-        }
-
-        .container {
-            width: 100%;
-        }
-
-        @media (min-width: 640px) {
-            .container {
-                max-width: 640px;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .container {
-                max-width: 768px;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .container {
-                max-width: 1024px;
-            }
-        }
-
-        @media (min-width: 1280px) {
-            .container {
-                max-width: 1280px;
-            }
-        }
-
-        @media (min-width: 1536px) {
-            .container {
-                max-width: 1536px;
-            }
-        }
-
-        .visible {
-            visibility: visible;
-        }
-
-        .collapse {
-            visibility: collapse;
-        }
-
-        .absolute {
-            position: absolute;
-        }
-
-        .relative {
-            position: relative;
-        }
-
-        .left-\[50\%\] {
-            left: 50%;
-        }
-
-        .order-first {
-            order: -9999;
-        }
-
-        .order-last {
-            order: 9999;
-        }
-
-        .col-span-1 {
-            grid-column: span 1 / span 1;
-        }
-
-        .col-span-12 {
-            grid-column: span 12 / span 12;
-        }
-
-        .col-span-4 {
-            grid-column: span 4 / span 4;
-        }
-
-        .col-span-5 {
-            grid-column: span 5 / span 5;
-        }
-
-        .col-span-6 {
-            grid-column: span 6 / span 6;
-        }
-
-        .col-span-7 {
-            grid-column: span 7 / span 7;
-        }
-
-        .col-span-8 {
-            grid-column: span 8 / span 8;
-        }
-
-        .mx-auto {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .my-1 {
-            margin-top: 0.25rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .my-10 {
-            margin-top: 2.5rem;
-            margin-bottom: 2.5rem;
-        }
-
-        .my-16 {
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-        }
-
-        .my-4 {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .mb-0 {
-            margin-bottom: 0px;
-        }
-
-        .mb-2 {
-            margin-bottom: 0.5rem;
-        }
-
-        .mb-3 {
-            margin-bottom: 0.75rem;
-        }
-
-        .mb-4 {
-            margin-bottom: 1rem;
-        }
-
-        .mb-6 {
-            margin-bottom: 1.5rem;
-        }
-
-        .mb-8 {
-            margin-bottom: 2rem;
-        }
-
-        .mr-2 {
-            margin-right: 0.5rem;
-        }
-
-        .mt-0 {
-            margin-top: 0px;
-        }
-
-        .mt-10 {
-            margin-top: 2.5rem;
-        }
-
-        .mt-16 {
-            margin-top: 4rem;
-        }
-
-        .mt-2 {
-            margin-top: 0.5rem;
-        }
-
-        .mt-20 {
-            margin-top: 5rem;
-        }
-
-        .mt-3 {
-            margin-top: 0.75rem;
-        }
-
-        .mt-4 {
-            margin-top: 1rem;
-        }
-
-        .mt-5 {
-            margin-top: 1.25rem;
-        }
-
-        .mt-6 {
-            margin-top: 1.5rem;
-        }
-
-        .mt-8 {
-            margin-top: 2rem;
-        }
-
-        .mt-\[10px\] {
-            margin-top: 10px;
-        }
-
-        .block {
-            display: block;
-        }
-
-        .inline-block {
-            display: inline-block;
-        }
-
-        .flex {
-            display: flex;
-        }
-
-        .table {
-            display: table;
-        }
-
-        .grid {
-            display: grid;
-        }
-
-        .contents {
-            display: contents;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .h-10 {
-            height: 2.5rem;
-        }
-
-        .h-16 {
-            height: 4rem;
-        }
-
-        .h-20 {
-            height: 5rem;
-        }
-
-        .h-\[10px\] {
-            height: 10px;
-        }
-
-        .h-\[15vh\] {
-            height: 15vh;
-        }
-
-        .h-\[1px\] {
-            height: 1px;
-        }
-
-        .h-\[200px\] {
-            height: 200px;
-        }
-
-        .h-\[250px\] {
-            height: 250px;
-        }
-
-        .h-fit {
-            height: -moz-fit-content;
-            height: fit-content;
-        }
-
-        .h-full {
-            height: 100%;
-        }
-
-        .h-\[20vh\] {
-            height: 20vh;
-        }
-
-        .h-\[80vh\] {
-            height: 80vh;
-        }
-
-        .h-\[60vh\] {
-            height: 60vh;
-        }
-
-        .w-10 {
-            width: 2.5rem;
-        }
-
-        .w-11 {
-            width: 2.75rem;
-        }
-
-        .w-11\/12 {
-            width: 91.666667%;
-        }
-
-        .w-16 {
-            width: 4rem;
-        }
-
-        .w-20 {
-            width: 5rem;
-        }
-
-        .w-3 {
-            width: 0.75rem;
-        }
-
-        .w-full {
-            width: 100%;
-        }
-
-        .border-collapse {
-            border-collapse: collapse;
-        }
-
-        .transform {
-            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-        }
-
-        .resize {
-            resize: both;
-        }
-
-        .grid-cols-12 {
-            grid-template-columns: repeat(12, minmax(0, 1fr));
-        }
-
-        .grid-cols-2 {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .grid-cols-3 {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-
-        .grid-cols-4 {
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-
-        .flex-col {
-            flex-direction: column;
-        }
-
-        .content-center {
-            align-content: center;
-        }
-
-        .items-center {
-            align-items: center;
-        }
-
-        .justify-end {
-            justify-content: flex-end;
-        }
-
-        .justify-center {
-            justify-content: center;
-        }
-
-        .gap-1 {
-            gap: 0.25rem;
-        }
-
-        .gap-10 {
-            gap: 2.5rem;
-        }
-
-        .gap-16 {
-            gap: 4rem;
-        }
-
-        .gap-2 {
-            gap: 0.5rem;
-        }
-
-        .gap-20 {
-            gap: 5rem;
-        }
-
-        .gap-3 {
-            gap: 0.75rem;
-        }
-
-        .gap-4 {
-            gap: 1rem;
-        }
-
-        .gap-5 {
-            gap: 1.25rem;
-        }
-
-        .rounded-full {
-            border-radius: 9999px;
-        }
-
-        .rounded-lg {
-            border-radius: 0.5rem;
-        }
-
-        .border {
-            border-width: 1px;
-        }
-
-        .border-transparent {
-            border-color: transparent;
-        }
-
-        .bg-\[\#F3F3F3\] {
-            --tw-bg-opacity: 1;
-            background-color: rgb(243 243 243 / var(--tw-bg-opacity));
-        }
-
-        .bg-\[\#F7B4C0\] {
-            --tw-bg-opacity: 1;
-            background-color: rgb(247 180 192 / var(--tw-bg-opacity));
-        }
-
-        .bg-\[\#FEF7F7\] {
-            --tw-bg-opacity: 1;
-            background-color: rgb(254 247 247 / var(--tw-bg-opacity));
-        }
-
-        .bg-\[\#FFD7E2\] {
-            --tw-bg-opacity: 1;
-            background-color: rgb(255 215 226 / var(--tw-bg-opacity));
-        }
-
-        .bg-\[\#FFF7F8\] {
-            --tw-bg-opacity: 1;
-            background-color: rgb(255 247 248 / var(--tw-bg-opacity));
-        }
-
-        .bg-\[\#f8e8eaec\] {
-            background-color: #f8e8eaec;
-        }
-
-        .bg-white {
-            --tw-bg-opacity: 1;
-            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-        }
-
-        .bg-\[\#f8e8eaf8\] {
-            background-color: #f8e8eaf8;
-        }
-
-        .px-0 {
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-
-        .px-10 {
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
-        }
-
-        .px-16 {
-            padding-left: 4rem;
-            padding-right: 4rem;
-        }
-
-        .px-2 {
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-        }
-
-        .px-3 {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-        }
-
-        .px-4 {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        .px-6 {
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-        }
-
-        .px-8 {
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
-
-        .py-1 {
-            padding-top: 0.25rem;
-            padding-bottom: 0.25rem;
-        }
-
-        .py-10 {
-            padding-top: 2.5rem;
-            padding-bottom: 2.5rem;
-        }
-
-        .py-2 {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-        }
-
-        .py-4 {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-
-        .py-6 {
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-        }
-
-        .px-20 {
-            padding-left: 5rem;
-            padding-right: 5rem;
-        }
-
-        .pb-4 {
-            padding-bottom: 1rem;
-        }
-
-        .pl-3 {
-            padding-left: 0.75rem;
-        }
-
-        .pr-5 {
-            padding-right: 1.25rem;
-        }
-
-        .pt-0 {
-            padding-top: 0px;
-        }
-
-        .pt-10 {
-            padding-top: 2.5rem;
-        }
-
-        .pt-2 {
-            padding-top: 0.5rem;
-        }
-
-        .pt-6 {
-            padding-top: 1.5rem;
-        }
-
-        .text-left {
-            text-align: left;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .text-justify {
-            text-align: justify;
-        }
-
-        .text-2xl {
-            font-size: 1.5rem;
-            line-height: 2rem;
-        }
-
-        .text-3xl {
-            font-size: 1.875rem;
-            line-height: 2.25rem;
-        }
-
-        .text-4xl {
-            font-size: 2.25rem;
-            line-height: 2.5rem;
-        }
-
-        .text-5xl {
-            font-size: 3rem;
-            line-height: 1;
-        }
-
-        .text-base {
-            font-size: 1rem;
-            line-height: 1.5rem;
-        }
-
-        .text-lg {
-            font-size: 1.125rem;
-            line-height: 1.75rem;
-        }
-
-        .text-sm {
-            font-size: 0.875rem;
-            line-height: 1.25rem;
-        }
-
-        .text-xl {
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-        }
-
-        .text-xs {
-            font-size: 0.75rem;
-            line-height: 1rem;
-        }
-
-        .font-bold {
-            font-weight: 700;
-        }
-
-        .font-extrabold {
-            font-weight: 800;
-        }
-
-        .font-medium {
-            font-weight: 500;
-        }
-
-        .font-semibold {
-            font-weight: 600;
-        }
-
-        .uppercase {
-            text-transform: uppercase;
-        }
-
-        .leading-7 {
-            line-height: 1.75rem;
-        }
-
-        .leading-none {
-            line-height: 1;
-        }
-
-        .text-\[\#2e2c2cee\] {
-            color: #2e2c2cee;
-        }
-
-        .text-\[\#F7B4C0\] {
-            --tw-text-opacity: 1;
-            color: rgb(247 180 192 / var(--tw-text-opacity));
-        }
-
-        .text-black {
-            --tw-text-opacity: 1;
-            color: rgb(0 0 0 / var(--tw-text-opacity));
-        }
-
-        .text-white {
-            --tw-text-opacity: 1;
-            color: rgb(255 255 255 / var(--tw-text-opacity));
-        }
-
-        .underline {
-            text-decoration-line: underline;
-        }
-
-        .outline {
-            outline-style: solid;
-        }
-
-        .filter {
-            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-        }
-
-        .transition {
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 150ms;
-        }
-
-        .hover\:border-\[\#F7B4C0\]:hover {
-            --tw-border-opacity: 1;
-            border-color: rgb(247 180 192 / var(--tw-border-opacity));
-        }
-
-        .hover\:bg-\[\#f7b4c0cb\]:hover {
-            background-color: #f7b4c0cb;
-        }
-
-        @media (min-width: 768px) {
-            .md\:left-\[70\%\] {
-                left: 70%;
-            }
-
-            .md\:order-first {
-                order: -9999;
-            }
-
-            .md\:col-span-5 {
-                grid-column: span 5 / span 5;
-            }
-
-            .md\:col-span-7 {
-                grid-column: span 7 / span 7;
-            }
-
-            .md\:my-4 {
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
-
-            .md\:mt-0 {
-                margin-top: 0px;
-            }
-
-            .md\:mt-16 {
-                margin-top: 4rem;
-            }
-
-            .md\:inline-block {
-                display: inline-block;
-            }
-
-            .md\:flex {
-                display: flex;
-            }
-
-            .md\:grid {
-                display: grid;
-            }
-
-            .md\:h-16 {
-                height: 4rem;
-            }
-
-            .md\:h-\[30vh\] {
-                height: 30vh;
-            }
-
-            .md\:w-16 {
-                width: 4rem;
-            }
-
-            .md\:w-full {
-                width: 100%;
-            }
-
-            .md\:grid-cols-2 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .md\:gap-10 {
-                gap: 2.5rem;
-            }
-
-            .md\:gap-4 {
-                gap: 1rem;
-            }
-
-            .md\:gap-5 {
-                gap: 1.25rem;
-            }
-
-            .md\:px-10 {
-                padding-left: 2.5rem;
-                padding-right: 2.5rem;
-            }
-
-            .md\:px-6 {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-            }
-
-            .md\:text-base {
-                font-size: 1rem;
-                line-height: 1.5rem;
-            }
-
-            .md\:text-lg {
-                font-size: 1.125rem;
-                line-height: 1.75rem;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .lg\:left-\[40\%\] {
-                left: 40%;
-            }
-
-            .lg\:col-span-4 {
-                grid-column: span 4 / span 4;
-            }
-
-            .lg\:col-span-6 {
-                grid-column: span 6 / span 6;
-            }
-
-            .lg\:col-span-8 {
-                grid-column: span 8 / span 8;
-            }
-
-            .lg\:my-10 {
-                margin-top: 2.5rem;
-                margin-bottom: 2.5rem;
-            }
-
-            .lg\:mb-0 {
-                margin-bottom: 0px;
-            }
-
-            .lg\:mb-8 {
-                margin-bottom: 2rem;
-            }
-
-            .lg\:mt-0 {
-                margin-top: 0px;
-            }
-
-            .lg\:mt-10 {
-                margin-top: 2.5rem;
-            }
-
-            .lg\:mt-20 {
-                margin-top: 5rem;
-            }
-
-            .lg\:grid {
-                display: grid;
-            }
-
-            .lg\:h-20 {
-                height: 5rem;
-            }
-
-            .lg\:h-\[20vh\] {
-                height: 20vh;
-            }
-
-            .lg\:h-\[60vh\] {
-                height: 60vh;
-            }
-
-            .lg\:w-20 {
-                width: 5rem;
-            }
-
-            .lg\:w-3\/5 {
-                width: 60%;
-            }
-
-            .lg\:grid-cols-12 {
-                grid-template-columns: repeat(12, minmax(0, 1fr));
-            }
-
-            .lg\:grid-cols-3 {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-
-            .lg\:grid-cols-4 {
-                grid-template-columns: repeat(4, minmax(0, 1fr));
-            }
-
-            .lg\:gap-10 {
-                gap: 2.5rem;
-            }
-
-            .lg\:gap-16 {
-                gap: 4rem;
-            }
-
-            .lg\:gap-20 {
-                gap: 5rem;
-            }
-
-            .lg\:gap-4 {
-                gap: 1rem;
-            }
-
-            .lg\:px-16 {
-                padding-left: 4rem;
-                padding-right: 4rem;
-            }
-
-            .lg\:py-6 {
-                padding-top: 1.5rem;
-                padding-bottom: 1.5rem;
-            }
-
-            .lg\:pt-0 {
-                padding-top: 0px;
-            }
-
-            .lg\:pt-10 {
-                padding-top: 2.5rem;
-            }
-
-            .lg\:text-left {
-                text-align: left;
-            }
-
-            .lg\:text-2xl {
-                font-size: 1.5rem;
-                line-height: 2rem;
-            }
-
-            .lg\:text-3xl {
-                font-size: 1.875rem;
-                line-height: 2.25rem;
-            }
-
-            .lg\:text-4xl {
-                font-size: 2.25rem;
-                line-height: 2.5rem;
-            }
-
-            .lg\:text-5xl {
-                font-size: 3rem;
-                line-height: 1;
-            }
-
-            .lg\:text-base {
-                font-size: 1rem;
-                line-height: 1.5rem;
-            }
-        }
-
-        @media (min-width: 1280px) {
-            .xl\:left-\[50\%\] {
-                left: 50%;
-            }
-
-            .xl\:col-span-4 {
-                grid-column: span 4 / span 4;
-            }
-
-            .xl\:col-span-6 {
-                grid-column: span 6 / span 6;
-            }
-
-            .xl\:mt-20 {
-                margin-top: 5rem;
-            }
-
-            .xl\:grid {
-                display: grid;
-            }
-
-            .xl\:h-\[80vh\] {
-                height: 80vh;
-            }
-
-            .xl\:h-full {
-                height: 100%;
-            }
-
-            .xl\:w-11\/12 {
-                width: 91.666667%;
-            }
-
-            .xl\:w-\[10px\] {
-                width: 10px;
-            }
-
-            .xl\:w-\[90\%\] {
-                width: 90%;
-            }
-
-            .xl\:grid-cols-4 {
-                grid-template-columns: repeat(4, minmax(0, 1fr));
-            }
-
-            .xl\:gap-10 {
-                gap: 2.5rem;
-            }
-
-            .xl\:gap-20 {
-                gap: 5rem;
-            }
-
-            .xl\:px-0 {
-                padding-left: 0px;
-                padding-right: 0px;
-            }
-
-            .xl\:py-10 {
-                padding-top: 2.5rem;
-                padding-bottom: 2.5rem;
-            }
-
-            .xl\:text-3xl {
-                font-size: 1.875rem;
-                line-height: 2.25rem;
-            }
-
-            .xl\:text-4xl {
-                font-size: 2.25rem;
-                line-height: 2.5rem;
-            }
-        }
-
-        /* ============tailwind=========== */
-
-        @media (max-width: 540px) {
-            .quiz-back-mobile {
-                display: flex;
-            }
-
-            .quiz-back {
-                display: none;
-            }
-
-            .mobileViewHero {
-                display: flex;
-            }
-
-            .deskTopViewHero {
-                display: none;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .quiz-back-mobile {
-                display: none;
-            }
-
-
-            .mobileViewHero {
-                display: none;
-            }
-        }
-    </style>
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Make elements with the HTML hidden attribute stay hidden by default */
+
+    [hidden] {
+      display: none;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    @media (min-width: 640px) {
+      .container {
+        max-width: 640px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        max-width: 768px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        max-width: 1024px;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .container {
+        max-width: 1280px;
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .container {
+        max-width: 1536px;
+      }
+    }
+
+    .visible {
+      visibility: visible;
+    }
+
+    .collapse {
+      visibility: collapse;
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .left-\[50\%\] {
+      left: 50%;
+    }
+
+    .order-first {
+      order: -9999;
+    }
+
+    .order-last {
+      order: 9999;
+    }
+
+    .col-span-1 {
+      grid-column: span 1 / span 1;
+    }
+
+    .col-span-12 {
+      grid-column: span 12 / span 12;
+    }
+
+    .col-span-4 {
+      grid-column: span 4 / span 4;
+    }
+
+    .col-span-5 {
+      grid-column: span 5 / span 5;
+    }
+
+    .col-span-6 {
+      grid-column: span 6 / span 6;
+    }
+
+    .col-span-7 {
+      grid-column: span 7 / span 7;
+    }
+
+    .col-span-8 {
+      grid-column: span 8 / span 8;
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .my-1 {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .my-10 {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .my-16 {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .my-4 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .mb-0 {
+      margin-bottom: 0px;
+    }
+
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .mb-3 {
+      margin-bottom: 0.75rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+
+    .mb-6 {
+      margin-bottom: 1.5rem;
+    }
+
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+
+    .mr-2 {
+      margin-right: 0.5rem;
+    }
+
+    .mt-0 {
+      margin-top: 0px;
+    }
+
+    .mt-10 {
+      margin-top: 2.5rem;
+    }
+
+    .mt-16 {
+      margin-top: 4rem;
+    }
+
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+
+    .mt-20 {
+      margin-top: 5rem;
+    }
+
+    .mt-3 {
+      margin-top: 0.75rem;
+    }
+
+    .mt-4 {
+      margin-top: 1rem;
+    }
+
+    .mt-5 {
+      margin-top: 1.25rem;
+    }
+
+    .mt-6 {
+      margin-top: 1.5rem;
+    }
+
+    .mt-8 {
+      margin-top: 2rem;
+    }
+
+    .mt-\[10px\] {
+      margin-top: 10px;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .table {
+      display: table;
+    }
+
+    .grid {
+      display: grid;
+    }
+
+    .contents {
+      display: contents;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .h-10 {
+      height: 2.5rem;
+    }
+
+    .h-16 {
+      height: 4rem;
+    }
+
+    .h-20 {
+      height: 5rem;
+    }
+
+    .h-\[10px\] {
+      height: 10px;
+    }
+
+    .h-\[150px\] {
+      height: 150px;
+    }
+
+    .h-\[15vh\] {
+      height: 15vh;
+    }
+
+    .h-\[200px\] {
+      height: 200px;
+    }
+
+    .h-\[60vh\] {
+      height: 60vh;
+    }
+
+    .h-fit {
+      height: -moz-fit-content;
+      height: fit-content;
+    }
+
+    .h-full {
+      height: 100%;
+    }
+
+    .w-10 {
+      width: 2.5rem;
+    }
+
+    .w-11 {
+      width: 2.75rem;
+    }
+
+    .w-11\/12 {
+      width: 91.666667%;
+    }
+
+    .w-16 {
+      width: 4rem;
+    }
+
+    .w-20 {
+      width: 5rem;
+    }
+
+    .w-3 {
+      width: 0.75rem;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .border-collapse {
+      border-collapse: collapse;
+    }
+
+    .transform {
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    .resize {
+      resize: both;
+    }
+
+    .grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .flex-col {
+      flex-direction: column;
+    }
+
+    .content-center {
+      align-content: center;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .justify-end {
+      justify-content: flex-end;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .gap-1 {
+      gap: 0.25rem;
+    }
+
+    .gap-10 {
+      gap: 2.5rem;
+    }
+
+    .gap-16 {
+      gap: 4rem;
+    }
+
+    .gap-2 {
+      gap: 0.5rem;
+    }
+
+    .gap-20 {
+      gap: 5rem;
+    }
+
+    .gap-3 {
+      gap: 0.75rem;
+    }
+
+    .gap-4 {
+      gap: 1rem;
+    }
+
+    .gap-5 {
+      gap: 1.25rem;
+    }
+
+    .rounded-full {
+      border-radius: 9999px;
+    }
+
+    .rounded-lg {
+      border-radius: 0.5rem;
+    }
+
+    .border {
+      border-width: 1px;
+    }
+
+    .border-transparent {
+      border-color: transparent;
+    }
+
+    .bg-\[\#F3F3F3\] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+    }
+
+    .bg-\[\#F7B4C0\] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(247 180 192 / var(--tw-bg-opacity));
+    }
+
+    .bg-\[\#FEF7F7\] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(254 247 247 / var(--tw-bg-opacity));
+    }
+
+    .bg-\[\#FFF7F8\] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(255 247 248 / var(--tw-bg-opacity));
+    }
+
+    .bg-\[\#f8e8eaec\] {
+      background-color: #f8e8eaec;
+    }
+
+    .bg-\[\#f8e8eaf8\] {
+      background-color: #f8e8eaf8;
+    }
+
+    .bg-white {
+      --tw-bg-opacity: 1;
+      background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    }
+
+    .px-0 {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .px-10 {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    .px-16 {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    .px-2 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .px-20 {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .px-3 {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .px-6 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .px-8 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .py-1 {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+
+    .py-10 {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .py-2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .py-4 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .py-6 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .pb-4 {
+      padding-bottom: 1rem;
+    }
+
+    .pl-3 {
+      padding-left: 0.75rem;
+    }
+
+    .pr-5 {
+      padding-right: 1.25rem;
+    }
+
+    .pt-0 {
+      padding-top: 0px;
+    }
+
+    .pt-10 {
+      padding-top: 2.5rem;
+    }
+
+    .pt-2 {
+      padding-top: 0.5rem;
+    }
+
+    .pt-6 {
+      padding-top: 1.5rem;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+
+    .text-2xl {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .text-3xl {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+
+    .text-4xl {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+
+    .text-5xl {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .text-base {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    .text-lg {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+
+    .text-sm {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .text-xl {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+
+    .text-xs {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+
+    .font-bold {
+      font-weight: 700;
+    }
+
+    .font-extrabold {
+      font-weight: 800;
+    }
+
+    .font-medium {
+      font-weight: 500;
+    }
+
+    .font-semibold {
+      font-weight: 600;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .leading-7 {
+      line-height: 1.75rem;
+    }
+
+    .leading-none {
+      line-height: 1;
+    }
+
+    .text-\[\#2e2c2cee\] {
+      color: #2e2c2cee;
+    }
+
+    .text-\[\#F7B4C0\] {
+      --tw-text-opacity: 1;
+      color: rgb(247 180 192 / var(--tw-text-opacity));
+    }
+
+    .text-black {
+      --tw-text-opacity: 1;
+      color: rgb(0 0 0 / var(--tw-text-opacity));
+    }
+
+    .text-white {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+
+    .underline {
+      text-decoration-line: underline;
+    }
+
+    .outline {
+      outline-style: solid;
+    }
+
+    .filter {
+      filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    }
+
+    .transition {
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+
+    .hover\:border-\[\#F7B4C0\]:hover {
+      --tw-border-opacity: 1;
+      border-color: rgb(247 180 192 / var(--tw-border-opacity));
+    }
+
+    .hover\:bg-\[\#f7b4c0cb\]:hover {
+      background-color: #f7b4c0cb;
+    }
+
+    @media (min-width: 768px) {
+      .md\:left-\[70\%\] {
+        left: 70%;
+      }
+
+      .md\:order-first {
+        order: -9999;
+      }
+
+      .md\:col-span-5 {
+        grid-column: span 5 / span 5;
+      }
+
+      .md\:col-span-7 {
+        grid-column: span 7 / span 7;
+      }
+
+      .md\:my-4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .md\:mt-0 {
+        margin-top: 0px;
+      }
+
+      .md\:mt-16 {
+        margin-top: 4rem;
+      }
+
+      .md\:inline-block {
+        display: inline-block;
+      }
+
+      .md\:flex {
+        display: flex;
+      }
+
+      .md\:grid {
+        display: grid;
+      }
+
+      .md\:h-16 {
+        height: 4rem;
+      }
+
+      .md\:h-\[30vh\] {
+        height: 30vh;
+      }
+
+      .md\:w-16 {
+        width: 4rem;
+      }
+
+      .md\:w-full {
+        width: 100%;
+      }
+
+      .md\:gap-10 {
+        gap: 2.5rem;
+      }
+
+      .md\:gap-4 {
+        gap: 1rem;
+      }
+
+      .md\:px-10 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      .md\:px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      .md\:text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .lg\:left-\[40\%\] {
+        left: 40%;
+      }
+
+      .lg\:col-span-4 {
+        grid-column: span 4 / span 4;
+      }
+
+      .lg\:col-span-6 {
+        grid-column: span 6 / span 6;
+      }
+
+      .lg\:col-span-8 {
+        grid-column: span 8 / span 8;
+      }
+
+      .lg\:my-10 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .lg\:mb-0 {
+        margin-bottom: 0px;
+      }
+
+      .lg\:mb-8 {
+        margin-bottom: 2rem;
+      }
+
+      .lg\:mt-0 {
+        margin-top: 0px;
+      }
+
+      .lg\:mt-10 {
+        margin-top: 2.5rem;
+      }
+
+      .lg\:grid {
+        display: grid;
+      }
+
+      .lg\:h-20 {
+        height: 5rem;
+      }
+
+      .lg\:h-\[20vh\] {
+        height: 20vh;
+      }
+
+      .lg\:h-\[250px\] {
+        height: 250px;
+      }
+
+      .lg\:w-20 {
+        width: 5rem;
+      }
+
+      .lg\:w-3\/5 {
+        width: 60%;
+      }
+
+      .lg\:grid-cols-12 {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+      }
+
+      .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .lg\:gap-10 {
+        gap: 2.5rem;
+      }
+
+      .lg\:gap-20 {
+        gap: 5rem;
+      }
+
+      .lg\:gap-4 {
+        gap: 1rem;
+      }
+
+      .lg\:px-16 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      .lg\:py-6 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      .lg\:pt-0 {
+        padding-top: 0px;
+      }
+
+      .lg\:pt-10 {
+        padding-top: 2.5rem;
+      }
+
+      .lg\:text-left {
+        text-align: left;
+      }
+
+      .lg\:text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      .lg\:text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+
+      .lg\:text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+
+      .lg\:text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+      .lg\:text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .xl\:left-\[50\%\] {
+        left: 50%;
+      }
+
+      .xl\:col-span-4 {
+        grid-column: span 4 / span 4;
+      }
+
+      .xl\:col-span-6 {
+        grid-column: span 6 / span 6;
+      }
+
+      .xl\:mt-20 {
+        margin-top: 5rem;
+      }
+
+      .xl\:grid {
+        display: grid;
+      }
+
+      .xl\:h-\[80vh\] {
+        height: 80vh;
+      }
+
+      .xl\:h-full {
+        height: 100%;
+      }
+
+      .xl\:w-11\/12 {
+        width: 91.666667%;
+      }
+
+      .xl\:w-\[10px\] {
+        width: 10px;
+      }
+
+      .xl\:w-\[90\%\] {
+        width: 90%;
+      }
+
+      .xl\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .xl\:gap-10 {
+        gap: 2.5rem;
+      }
+
+      .xl\:gap-20 {
+        gap: 5rem;
+      }
+
+      .xl\:px-0 {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      .xl\:py-10 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      .xl\:text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+
+      .xl\:text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+    }
+
+    /* ============tailwind=========== */
+
+    @media (max-width: 540px) {
+      .quiz-back-mobile {
+        display: flex;
+      }
+
+      .quiz-back {
+        display: none;
+      }
+
+      .mobileViewHero {
+        display: flex;
+      }
+
+      .deskTopViewHero {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .quiz-back-mobile {
+        display: none;
+      }
+
+
+      .mobileViewHero {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- ==================Hero  start=============== -->
-    <section class=" deskTopViewHero">
-        <div class=" hero-back h-[15vh] md:h-[30vh] lg:h-[20vh] xl:h-[80vh]"
-            style=" background-image: url('https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/hero.jpg');">
-            <div class=" hero_content left-[50%] md:left-[70%] lg:left-[40%] xl:left-[50%]">
-                <h2 class=" lg:text-5xl text-black ">bhave™ <strong class="text-white ">ANTI-AGING</strong></h2>
-                <h2 class=" lg:text-5xl text-black  font-bold">RESCUE THERAPY</h2>
-            </div>
-        </div>
-    </section>
-    <!-- ===========mobile viwe header========== -->
-    <section class="">
-        <div class=" mobileViewHero h-[80vh]"
-            style=" background-image: url('https://bhavehair.com.au/cdn/shop/files/antiaging_-_Mobile_800x.png?v=1707872337');">
-            <div class=" hero_contentMobile ">
-                <h2 class=" text-xl text-white font-bold  text-center">bhave™ <strong
-                        class="text-white ">ANTI-AGING</strong>
-                </h2>
-                <h2 class=" text-xl text-white  font-bold inline-block text-center">RESCUE THERAPY</h2>
-            </div>
-        </div>
-    </section>
-    <!-- ===========mobile viwe header========== -->
-    <!-- ==================Hero  end=============== -->
-    <!-- =============TRANSFORM start======== -->
-    <section class="bg-[#FFF7F8]">
-        <div class="container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
-                <div class="lg:grid grid-cols-12 gap-5 xl:gap-10 py-4 lg:py-6 xl:py-10">
-                    <div class="md:col-span-5 lg:col-span-4 xl:col-span-6">
-                        <div class="">
-                            <h2
-                                class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
-                                TRANSFORM YOUR
-                            </h2>
-                            <h2
-                                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
-                                HAIR INTO ITS
-                            </h2>
-                            <h2
-                                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
-                                STRONGEST
-                            </h2>
-                            <h2
-                                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
-                                HEALTHIEST STATE
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="md:col-span-7 lg:col-span-8  xl:col-span-6 mt-10 lg:mt-0">
-                        <div class=" mb-4 lg:mb-8">
-                            <h2 class="text-2xl lg:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
-                                REDISCOVER YOUTHFUL VIBRANCE
-                            </h2>
-                        </div>
-                        <div class=" mb-3 lg:mb-8">
-                            <p class="text-base text-black pb-4 text-left">
-                                Let's talk hair. Not just any hair - YOUR hair. It's not just
-                                about looking good; it's about feeling fabulous, right? But
-                                here's the thing; damaged hair can be a sneaky little bugger,
-                                subtly aging us without even a polite warning. It's like,
-                                hello, who invited you to this party?
-                            </p>
-                            <p class="text-base text-black pb-4 text-left">
-                                In our quest for beauty, our precious locks often get the
-                                short end of the stick. Heatl styling, the sun playing tough,
-                                overzealous colouring and those oh-so-tempting chemical
-                                treatments - we've all been there, haven't we? The result is a
-                                hair identity crisis: dull, spiritless strands that scream
-                                " help me!" louder than a 90s boy band. </p>
-                        </div>
-                        <div class="">
-                            <h2 class="text-2xl lg:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
-                                TURN BACK TIME FOR YOUR HAIR
-                            </h2>
-                            <p class="text-base text-black pb-4 text-left my-1 md:my-4">
-                                Enter bhave™ Rescue Therapy: an in-salon revolution that metamorphoses damaged hair into
-                                a state of
-                                awe-inspiring splendour.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =============TRANSFORM end======== -->
-
-    <!-- ================TEMPORARY SOLUTION START============= -->
-    <section class="pt-2 pb-4  xl:mt-20 bg-[#f8e8eaec]">
-        <div class="container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
-                <div class=" grid grid-cols-12 gap-5 md:gap-10">
-                    <div class=" col-span-12 lg:col-span-6 order-last md:order-first">
-                        <h2
-                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-extrabold  mb-2 lg:mb-0">
-                            MORE THAN JUST A
-                        </h2>
-                        <h2
-                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-extrabold  mb-2 lg:mb-0">
-                            TEMPORARY SOLUTION: </h2>
-                        <div class=" mt-4">
-                            <div class="">
-                                <h2
-                                    class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-medium  mb-2 lg:mb-0">
-                                    A COMPLETE JOURNEY</h2>
-                                <h2
-                                    class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-medium  mb-2 lg:mb-0">
-                                    TO COMPREHENSIVE</h2>
-                                <h2
-                                    class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  font-medium  mb-2 lg:mb-0">
-                                    REJUVENATION</h2>
-                                <div class=" mt-4">
-                                    <p class="text-lg text-black pb-4 text-left">At the heart of bhave™ Rescue Therapy
-                                        is a multi-faceted approach,
-                                        offering three crucial benefits:
-                                        <strong>anti-aging,intensive repair</strong> and <strong>proactive
-                                            care</strong>. It's a harmonious
-                                        fusion of natural
-                                        wisdom and scientific
-                                        innovation, penetrating
-                                        deep into the hair's structure to address and reverse the fundamental problems
-                                        of damage and aging.
-                                        The outcome is not
-                                        just repair, but a complete rejuvenation. This comprehensive strategy ensures
-                                        the enduring health
-                                        and
-                                        beauty of your
-                                        hair.
-                                    </p>
-                                    <div class=" mt-8 lg:mt-10">
-                                        <a href="#"
-                                            class=" bg-[#F7B4C0] hover:bg-[#f7b4c0cb] px-6 py-2 rounded-full text-lg">
-                                            shop rescue
-                                            at home</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="mt-10 md:mt-0 col-span-12 lg:col-span-6 ">
-                        <div class="swiper mySwiper ">
-                            <div class="swiper-wrapper w-full ">
-                                <div class="swiper-slide">
-                                    <div class=" w-full  h-fit">
-                                        <img class=""
-                                            src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/slider01.png"
-                                            alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="w-full h-fit">
-                                        <img class=""
-                                            src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/slider02.png"
-                                            alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- ================TEMPORARY SOLUTION END============= -->
-    <!-- =================REVITALISE START=============== -->
-    <section class=" mt-10 md:mt-16 xl:mt-20">
-        <div class="container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
-                <div class=" lg:grid grid-cols-12 gap-10 lg:gap-20">
-                    <div class=" lg:col-span-6">
-                        <div class="grid grid-cols-12 gap-2 lg:gap-4">
-                            <div class=" col-span-6">
-                                <img class=" w-full"
-                                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/before.png"
-                                    alt="">
-                                <div class="">
-                                    <h2 class=" text-3xl text-[#2e2c2cee] text-center mt-3">before</h2>
-                                </div>
-                            </div>
-                            <div class=" col-span-6">
-                                <img class=" w-full"
-                                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/after.png"
-                                    alt="">
-                                <div class="">
-                                    <h2 class=" text-3xl text-[#2e2c2cee] text-center mt-3">after</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" mt-10 lg:mt-0 lg:col-span-6">
-                        <div class="">
-                            <h2
-                                class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
-                                REVITALISE DULL
-                            </h2>
-                            <h2
-                                class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
-                                LIFELESS COLOUR</h2>
-                        </div>
-
-                        <div class="">
-                            <p class="text-base text-black my-4 text-left">
-                                Got hair colour that’s more ‘meh’ than ‘yay’? Reawaken your hair’s brilliance. Transform
-                                dull tones into
-                                a radiant
-                                display of depth and shine. <strong>bhave™ Rescue Therapy</strong> reinvigorates your
-                                hair from the
-                                inside out, repairing
-                                both the
-                                cuticle and the internal structure. This natural defence against fading boosts your
-                                colour's vibrancy
-                                and luminosity,
-                                resulting in improved light reflection and richer, more vivid hues in every strand.
-                                Experience a truly
-                                luxurious and
-                                healthier hair journey.
-                            </p>
-                        </div>
-
-                        <div class=" mt-10">
-                            <h2
-                                class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
-                                TAME FRIZZ, SPLIT ENDS
-                            </h2>
-                            <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  mb-2 lg:mb-0">
-                                AND ROUGH TEXTURE</h2>
-                        </div>
-
-                        <div class="">
-                            <p class="text-base text-black my-4 text-left">
-                                Refined smoothness awaits. Damaged hair often leads to frustrating frizz, split ends,
-                                and a rough
-                                texture. <strong>bhave™ Rescue
-                                    Therapy</strong> operates from within to mend these issues, smoothing imperfections.
-                                The result? Hair
-                                that’s not
-                                only smoother
-                                but radiates a revitalised, youthful essence.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =================REVITALISE END=============== -->
-
-    <!-- ===================COMBAT start============== -->
-    <section class=" mt-10 md:mt-16 xl:mt-20">
-        <div class="container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0 h-full">
-                <div class="grid lg:grid-cols-12 gap-3 lg:gap-10 xl:gap-20">
-                    <div class="col-span-12 lg:col-span-6 content-center order-last md:order-first mt-10 md:mt-0">
-                        <div class="">
-                            <div class="">
-                                <div class="">
-                                    <div class="">
-                                        <h2
-                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-left mb-2 lg:mb-0">
-                                            COMBAT DRYNESS
-                                        </h2>
-                                        <h2
-                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  text-left mb-2 lg:mb-0">
-                                            AND BRITTLENESS</h2>
-                                    </div>
-                                    <div class="">
-                                        <p class="text-base text-black my-4 text-left">
-                                            Embark on a journey of hydration and strength. Revitalise dry and brittle
-                                            hair, common signs of
-                                            damage,
-                                            into a soft,
-                                            silky testament of health and vitality. Rejuvenation begins with restoring
-                                            your hair’s inherent
-                                            elasticity, enhancing
-                                            its strength, and shielding against future damage.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="mt-6 lg:mt-10 xl:mt-20">
-                                    <div class="">
-                                        <h2
-                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
-                                            REPAIR</h2>
-                                        <h2
-                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
-                                            REJUVENATE</h2>
-
-                                        <h2
-                                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none mb-2 lg:mb-0">
-                                            <strong>PROTECT</strong>
-                                        </h2>
-
-                                    </div>
-                                    <div class="">
-                                        <p class="text-base text-black my-4 text-left">
-                                            <strong>bhave™ Rescue</strong>
-                                            Therapy transcends mere repair; it embodies total hair rejuvenation. This
-                                            premier
-                                            in- salon experience
-                                            restores your hair's natural elasticity, revives colour vibrancy, and
-                                            reintroduces that enviable
-                                            shine. It ensures your
-                                            locks are not just manageable but vibrantly alive
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-6 w-full">
-                        <div class="grid grid-cols-12  justify-end gap-3">
-                            <div class=" col-span-6">
-                                <img class=" md:w-full object-fit-cover"
-                                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here01.png"
-                                    alt="">
-                            </div>
-                            <div class=" col-span-6">
-                                <img class="  md:w-full object-fit-cover"
-                                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here02.png"
-                                    alt="">
-                            </div>
-                            <div class=" col-span-6">
-                                <img class=" md:w-full object-fit-cover"
-                                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here03.png"
-                                    alt="">
-                            </div>
-                            <div class=" col-span-6">
-                                <img class=" md:w-full object-fit-cover"
-                                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here04.png"
-                                    alt="">
-                            </div>
-                            <div class=" col-span-6">
-                                <img class="md:w-full object-fit-cover"
-                                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here05.png"
-                                    alt="">
-                            </div>
-                            <div class=" col-span-6">
-                                <img class=" md:w-full object-fit-cover"
-                                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here06.png"
-                                    alt="">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ===================COMBAT start============== -->
-
-    <!-- ===========color-safe start========== -->
-    <section class=" mt-5 md:mt-16 xl:mt-20 bg-[#FEF7F7]">
-
-        <div class="mt-10 lg:my-10">
-            <img src="https://bhavehair.com.au/cdn/shop/files/Group_9916_1_2000x.png?v=1705634390" alt="">
-        </div>
-
-        </div>
-
-    </section>
-    <!-- ===========color-safe start========== -->
-
-    <!-- ==============EXPERTS START=========== -->
-    <section class="mt-10 md:mt-16 xl:mt-20  ">
-        <div class=" container mx-auto">
+  <!-- ==================Hero  start=============== -->
+  <section class=" deskTopViewHero">
+    <div class=" hero-back h-[15vh] md:h-[30vh] lg:h-[20vh] xl:h-[80vh]"
+      style=" background-image: url('https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/hero.jpg');">
+      <div class=" hero_content left-[50%] md:left-[70%] lg:left-[40%] xl:left-[50%]">
+        <h2 class=" lg:text-5xl text-black ">bhave™ <strong class="text-white ">ANTI-AGING</strong></h2>
+        <h2 class=" lg:text-5xl text-black  font-bold">RESCUE THERAPY</h2>
+      </div>
+    </div>
+  </section>
+  <!-- ===========mobile viwe header========== -->
+  <section class="">
+    <div class=" mobileViewHero h-[60vh]"
+      style=" background-image: url('https://bhavehair.com.au/cdn/shop/files/antiaging_-_Mobile_800x.png?v=1707872337');">
+      <div class=" hero_contentMobile ">
+        <h2 class=" text-2xl text-white font-bold  text-center">bhave™ <strong class="text-white ">ANTI-AGING</strong>
+        </h2>
+        <h2 class=" text-2xl text-white  font-bold inline-block text-center">RESCUE THERAPY</h2>
+      </div>
+    </div>
+  </section>
+  <!-- ===========mobile viwe header========== -->
+  <!-- ==================Hero  end=============== -->
+  <!-- =============TRANSFORM start======== -->
+  <section class="bg-[#FFF7F8]">
+    <div class="container mx-auto">
+      <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
+        <div class="lg:grid grid-cols-12 gap-5 xl:gap-10 py-4 lg:py-6 xl:py-10">
+          <div class="md:col-span-5 lg:col-span-4 xl:col-span-6">
             <div class="">
-                <p class=" text-lg text-center">rejuvenate with rescue therapy</p>
-                <h2 class=" text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center">
-                    READY TO BEGIN?
-                </h2>
-                <p class=" text-lg text-center">choose your path below</p>
+              <h2
+                class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
+                TRANSFORM YOUR
+              </h2>
+              <h2
+                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
+                HAIR INTO ITS
+              </h2>
+              <h2
+                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
+                STRONGEST
+              </h2>
+              <h2
+                class="text-2xl lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center lg:text-left mb-2 lg:mb-0">
+                HEALTHIEST STATE
+              </h2>
             </div>
-
+          </div>
+          <div class="md:col-span-7 lg:col-span-8  xl:col-span-6 mt-10 lg:mt-0">
+            <div class=" mb-4 lg:mb-8">
+              <h2 class="text-2xl lg:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
+                REDISCOVER YOUTHFUL VIBRANCE
+              </h2>
+            </div>
+            <div class=" mb-3 lg:mb-8">
+              <p class="text-base text-black pb-4 text-left">
+                Let's talk hair. Not just any hair - YOUR hair. It's not just
+                about looking good; it's about feeling fabulous, right? But
+                here's the thing; damaged hair can be a sneaky little bugger,
+                subtly aging us without even a polite warning. It's like,
+                hello, who invited you to this party?
+              </p>
+              <p class="text-base text-black pb-4 text-left">
+                In our quest for beauty, our precious locks often get the
+                short end of the stick. Heatl styling, the sun playing tough,
+                overzealous colouring and those oh-so-tempting chemical
+                treatments - we've all been there, haven't we? The result is a
+                hair identity crisis: dull, spiritless strands that scream
+                " help me!" louder than a 90s boy band. </p>
+            </div>
+            <div class="">
+              <h2 class="text-2xl lg:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
+                TURN BACK TIME FOR YOUR HAIR
+              </h2>
+              <p class="text-base text-black pb-4 text-left my-1 md:my-4">
+                Enter bhave™ Rescue Therapy: an in-salon revolution that metamorphoses damaged hair into a state of
+                awe-inspiring splendour.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="bg-[#F3F3F3] pt-6 lg:pt-0 ">
-            <div class=" container mx-auto">
-                <div class=" xl:w-[90%] mx-auto">
-                    <div class="xl:grid grid-cols-12">
-                        <div class=" col-span-5 lg:pt-10 px-3 md:px-10 lg:px-16 xl:px-0">
-                            <div class=" grid grid-cols-12 items-center">
-                                <div class=" col-span-6">
-                                    <h2
-                                        class=" text-xl  lg:text-2xl xl:text-3xl text-black leading-none font-bold text-left">
-                                        LET THE EXPERTS</h2>
-                                    <p class=" text-xl  lg:text-2xl xl:text-3xl text-black leading-none text-left">
-                                        ELEVATE YOUR HAIR</p>
-                                    <div class=" mt-4 text-left">
-                                        <a href="#"
-                                            class=" bg-[#F7B4C0] hover:bg-[#f7b4c0cb] px-2 md:px-6 py-2 rounded-full text-xs md:text-base">FIND
-                                            PARTNER
-                                            SALONS</a>
-                                    </div>
+      </div>
+    </div>
+  </section>
+  <!-- =============TRANSFORM end======== -->
 
-                                </div>
-                                <div class="col-span-6 flex justify-end">
-                                    <img class=" object-fit-cover"
-                                        src="https://bhavehair.com.au/cdn/shop/files/Bella_1000x.png?v=1703528032"
-                                        alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-span-1 flex justify-center">
-                            <div class=" bg-white w-full h-[10px] xl:h-full xl:w-[10px]">
-                            </div>
-                        </div>
-                        <div class=" col-span-6 px-3 md:px-10 lg:px-16 xl:px-0  pt-10">
-                            <div class=" grid grid-cols-12 items-center">
-                                <div class=" col-span-6">
-                                    <h2 class="text-xl  lg:text-2xl xl:text-3xl text-black leading-none ">
-
-                                        <span class=" font-bold">PROFESSIONAL STYLISTS</span> ARE YOU READY
-                                        TO ELEVATE YOUR CRAFT?
-                                    </h2>
-
-                                    <div class=" mt-4 text-left">
-                                        <a href="#"
-                                            class=" bg-[#F7B4C0] hover:bg-[#f7b4c0cb] px-6 py-2 rounded-full text-xs md:text-base">SALON
-                                            LOGIN</a>
-                                    </div>
-
-                                </div>
-                                <div class="col-span-6 ">
-                                    <div class="flex justify-end">
-                                        <img class=" object-fit-cover mt-[10px]"
-                                            src="https://bhavehair.com.au/cdn/shop/files/290621211505_1000x.png?v=1703528046"
-                                            alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
+  <!-- ================TEMPORARY SOLUTION START============= -->
+  <section class="pt-2 pb-4  xl:mt-20 bg-[#f8e8eaec]">
+    <div class="container mx-auto">
+      <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
+        <div class=" grid grid-cols-12 gap-5 md:gap-10">
+          <div class=" col-span-12 lg:col-span-6 order-last md:order-first">
+            <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-extrabold  mb-2 lg:mb-0">
+              MORE THAN JUST A
+            </h2>
+            <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-extrabold  mb-2 lg:mb-0">
+              TEMPORARY SOLUTION: </h2>
+            <div class=" mt-4">
+              <div class="">
+                <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-medium  mb-2 lg:mb-0">
+                  A COMPLETE JOURNEY</h2>
+                <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-medium  mb-2 lg:mb-0">
+                  TO COMPREHENSIVE</h2>
+                <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  font-medium  mb-2 lg:mb-0">
+                  REJUVENATION</h2>
+                <div class=" mt-4">
+                  <p class="text-lg text-black pb-4 text-left">At the heart of bhave™ Rescue Therapy
+                    is a multi-faceted approach,
+                    offering three crucial benefits:
+                    <strong>anti-aging,intensive repair</strong> and <strong>proactive care</strong>. It's a harmonious
+                    fusion of natural
+                    wisdom and scientific
+                    innovation, penetrating
+                    deep into the hair's structure to address and reverse the fundamental problems of damage and aging.
+                    The outcome is not
+                    just repair, but a complete rejuvenation. This comprehensive strategy ensures the enduring health
+                    and
+                    beauty of your
+                    hair.
+                  </p>
+                  <div class=" mt-8 lg:mt-10">
+                    <a href="#" class=" bg-[#F7B4C0] hover:bg-[#f7b4c0cb] px-6 py-2 rounded-full text-lg"> shop rescue
+                      at home</a>
+                  </div>
                 </div>
+
+              </div>
             </div>
 
+          </div>
+          <div class="mt-10 md:mt-0 col-span-12 lg:col-span-6 ">
+            <div class="swiper mySwiper ">
+              <div class="swiper-wrapper w-full ">
+                <div class="swiper-slide">
+                  <div class=" w-full  h-fit">
+                    <img class=""
+                      src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/slider01.png"
+                      alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full h-fit">
+                    <img class=""
+                      src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/slider02.png"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </section>
-    <!-- ==============EXPERTS END=========== -->
-
-    <!-- ================FAQ START=========== -->
-    <section class="mt-5 md:mt-16 xl:mt-20">
-        <div class=" container mx-auto">
-
-            <div class=" md:flex justify-center">
+      </div>
+  </section>
+  <!-- ================TEMPORARY SOLUTION END============= -->
+  <!-- =================REVITALISE START=============== -->
+  <section class=" mt-10 md:mt-16 xl:mt-20">
+    <div class="container mx-auto">
+      <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
+        <div class=" lg:grid grid-cols-12 gap-10 lg:gap-20">
+          <div class=" lg:col-span-6">
+            <div class="grid grid-cols-12 gap-2 lg:gap-4">
+              <div class=" col-span-6">
+                <img class=" w-full"
+                  src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/before.png"
+                  alt="">
                 <div class="">
+                  <h2 class=" text-3xl text-[#2e2c2cee] text-center mt-3">before</h2>
+                </div>
+              </div>
+              <div class=" col-span-6">
+                <img class=" w-full"
+                  src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/after.png"
+                  alt="">
+                <div class="">
+                  <h2 class=" text-3xl text-[#2e2c2cee] text-center mt-3">after</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" mt-10 lg:mt-0 lg:col-span-6">
+            <div class="">
+              <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
+                REVITALISE DULL
+              </h2>
+              <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
+                LIFELESS COLOUR</h2>
+            </div>
+
+            <div class="">
+              <p class="text-base text-black my-4 text-left">
+                Got hair colour that’s more ‘meh’ than ‘yay’? Reawaken your hair’s brilliance. Transform dull tones into
+                a radiant
+                display of depth and shine. <strong>bhave™ Rescue Therapy</strong> reinvigorates your hair from the
+                inside out, repairing
+                both the
+                cuticle and the internal structure. This natural defence against fading boosts your colour's vibrancy
+                and luminosity,
+                resulting in improved light reflection and richer, more vivid hues in every strand. Experience a truly
+                luxurious and
+                healthier hair journey.
+              </p>
+            </div>
+
+            <div class=" mt-10">
+              <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
+                TAME FRIZZ, SPLIT ENDS
+              </h2>
+              <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  mb-2 lg:mb-0">
+                AND ROUGH TEXTURE</h2>
+            </div>
+
+            <div class="">
+              <p class="text-base text-black my-4 text-left">
+                Refined smoothness awaits. Damaged hair often leads to frustrating frizz, split ends, and a rough
+                texture. <strong>bhave™ Rescue
+                  Therapy</strong> operates from within to mend these issues, smoothing imperfections. The result? Hair
+                that’s not
+                only smoother
+                but radiates a revitalised, youthful essence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =================REVITALISE END=============== -->
+
+  <!-- ===================COMBAT start============== -->
+  <section class=" mt-10 md:mt-16 xl:mt-20">
+    <div class="container mx-auto">
+      <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0 h-full">
+        <div class="grid lg:grid-cols-12 gap-3 lg:gap-10 xl:gap-20">
+          <div class="col-span-12 lg:col-span-6 content-center order-last md:order-first mt-10 md:mt-0">
+            <div class="">
+              <div class="">
+                <div class="">
+                  <div class="">
                     <h2
-                        class=" text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center  mb-2 lg:mb-0 mr-2">
-                        FREQUENTLY ASKED </h2>
+                      class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-left mb-2 lg:mb-0">
+                      COMBAT DRYNESS
+                    </h2>
+                    <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  text-left mb-2 lg:mb-0">
+                      AND BRITTLENESS</h2>
+                  </div>
+                  <div class="">
+                    <p class="text-base text-black my-4 text-left">
+                      Embark on a journey of hydration and strength. Revitalise dry and brittle hair, common signs of
+                      damage,
+                      into a soft,
+                      silky testament of health and vitality. Rejuvenation begins with restoring your hair’s inherent
+                      elasticity, enhancing
+                      its strength, and shielding against future damage.
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-6 lg:mt-10 xl:mt-20">
+                  <div class="">
+                    <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
+                      REPAIR</h2>
+                    <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold  mb-2 lg:mb-0">
+                      REJUVENATE</h2>
+
+                    <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none mb-2 lg:mb-0">
+                      <strong>PROTECT</strong>
+                    </h2>
+
+                  </div>
+                  <div class="">
+                    <p class="text-base text-black my-4 text-left">
+                      <strong>bhave™ Rescue</strong>
+                      Therapy transcends mere repair; it embodies total hair rejuvenation. This premier
+                      in- salon experience
+                      restores your hair's natural elasticity, revives colour vibrancy, and reintroduces that enviable
+                      shine. It ensures your
+                      locks are not just manageable but vibrantly alive
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-6 w-full">
+            <div class="grid grid-cols-12  justify-end gap-3">
+              <div class=" col-span-6">
+                <img class=" md:w-full object-fit-cover"
+                  src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here01.png"
+                  alt="">
+              </div>
+              <div class=" col-span-6">
+                <img class="  md:w-full object-fit-cover"
+                  src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here02.png"
+                  alt="">
+              </div>
+              <div class=" col-span-6">
+                <img class=" md:w-full object-fit-cover"
+                  src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here03.png"
+                  alt="">
+              </div>
+              <div class=" col-span-6">
+                <img class=" md:w-full object-fit-cover"
+                  src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here04.png"
+                  alt="">
+              </div>
+              <div class=" col-span-6">
+                <img class="md:w-full object-fit-cover"
+                  src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here05.png"
+                  alt="">
+              </div>
+              <div class=" col-span-6">
+                <img class=" md:w-full object-fit-cover"
+                  src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/here06.png"
+                  alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================COMBAT start============== -->
+
+  <!-- ===========color-safe start========== -->
+  <section class=" mt-5 md:mt-16 xl:mt-20 bg-[#FEF7F7]">
+    <div class="mt-10 lg:my-10">
+      <img src="https://bhavehair.com.au/cdn/shop/files/Group_9916_1_2000x.png?v=1705634390" alt="">
+    </div>
+
+    </div>
+
+  </section>
+  <!-- ===========color-safe start========== -->
+
+  <!-- ==============EXPERTS START=========== -->
+  <section class="mt-10 md:mt-16 xl:mt-20  ">
+    <div class=" container mx-auto">
+      <div class="">
+        <p class=" text-lg text-center">rejuvenate with rescue therapy</p>
+        <h2 class=" text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center">
+          READY TO BEGIN?
+        </h2>
+        <p class=" text-lg text-center">choose your path below</p>
+      </div>
+
+    </div>
+    <div class="bg-[#F3F3F3] pt-6 lg:pt-0 ">
+      <div class=" container mx-auto">
+        <div class=" xl:w-[90%] mx-auto">
+          <div class="xl:grid grid-cols-12">
+            <div class=" col-span-5 lg:pt-10 px-3 md:px-10 lg:px-16 xl:px-0">
+              <div class=" grid grid-cols-12 items-center">
+                <div class=" col-span-6">
+                  <h2 class=" text-xl  lg:text-2xl xl:text-3xl text-black leading-none font-bold text-left">
+                    LET THE EXPERTS</h2>
+                  <p class=" text-xl  lg:text-2xl xl:text-3xl text-black leading-none text-left">
+                    ELEVATE YOUR HAIR</p>
+                  <div class=" mt-4 text-left">
+                    <a href="#"
+                      class=" bg-[#F7B4C0] hover:bg-[#f7b4c0cb] px-2 md:px-6 py-2 rounded-full text-xs md:text-base">FIND
+                      PARTNER
+                      SALONS</a>
+                  </div>
+
+                </div>
+                <div class="col-span-6 flex justify-end">
+                  <img class=" object-fit-cover"
+                    src="https://bhavehair.com.au/cdn/shop/files/Bella_1000x.png?v=1703528032" alt="">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-span-1 flex justify-center">
+              <div class=" bg-white w-full h-[10px] xl:h-full xl:w-[10px]">
+              </div>
+            </div>
+            <div class=" col-span-6 px-3 md:px-10 lg:px-16 xl:px-0  pt-10">
+              <div class=" grid grid-cols-12 items-center">
+                <div class=" col-span-6">
+                  <h2 class="text-xl  lg:text-2xl xl:text-3xl text-black leading-none ">
+
+                    <span class=" font-bold">PROFESSIONAL STYLISTS</span> ARE YOU READY
+                    TO ELEVATE YOUR CRAFT?
+                  </h2>
+
+                  <div class=" mt-4 text-left">
+                    <a href="#"
+                      class=" bg-[#F7B4C0] hover:bg-[#f7b4c0cb] px-6 py-2 rounded-full text-xs md:text-base">SALON
+                      LOGIN</a>
+                  </div>
+
+                </div>
+                <div class="col-span-6 ">
+                  <div class="flex justify-end">
+                    <img class=" object-fit-cover mt-[10px]"
+                      src="https://bhavehair.com.au/cdn/shop/files/290621211505_1000x.png?v=1703528046" alt="">
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ==============EXPERTS END=========== -->
+
+  <!-- ================FAQ START=========== -->
+  <section class="mt-5 md:mt-16 xl:mt-20">
+    <div class=" container mx-auto">
+
+      <div class=" md:flex justify-center">
+        <div class="">
+          <h2
+            class=" text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center  mb-2 lg:mb-0 mr-2">
+            FREQUENTLY ASKED </h2>
+        </div>
+        <div class="">
+          <h2>
+            <h2 class=" text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center  mb-2 lg:mb-0">
+              QUESTIONS</span></h2>
+          </h2>
+        </div>
+      </div>
+
+      <div class="lg:w-3/5 mx-auto pl-3 pr-5 xl:px-0">
+        <div class=" mt-10">
+          <div class="collapsible-tabs__wrapper">
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                WHAT IS THE MAIN INGREDIENT USED IN BHAVE™ RESCUE
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+                  <p class=" text-sm lg:text-base  mb-4">
+                    Step into the world of bioactive keratin, where science and nature converge to bring you the
+                    ultimate solution for
+                    youthful, vibrant hair. This isn't just any ingredient; it's a powerhouse of strength and
+                    protection, naturally integral
+                    to hair, skin and nails.
+
+                  </p>
+
+                  <p class=" text-base mb-4">
+                    Bioactive keratin is a form of keratin that is functional and active, meaning it can interact
+                    beneficially with living
+                    cells, particularly those in human hair and skin. Unlike regular keratin, which might be denatured
+                    or less active due to
+                    harsh extraction processes, bioactive keratin is extracted in a way that preserves its natural
+                    structure and active
+                    properties.
+
+                  </p>
+
+
+                  <p class=" text-base mb-4">
+                    This type of keratin closely resembles the keratin found in human hair, making it highly effective
+                    for hair
+                    rejuvenation. When applied, it can penetrate the hair, bonding with the natural keratin present.
+                    This results in various
+                    benefits like improved hair strength, increased elasticity and enhanced moisture retention,
+                    contributing to healthier,
+                    more resilient hair.
+
+                  </p>
+
+
+                  <p class=" text-base mb-4">
+                    Here's the real breakthrough: our keratin is a game-changer in anti-aging hair care. It goes beyond
+                    mere damage repair –
+                    it rejuvenates your hair right down to the cellular level, stimulating collagen production. Backed
+                    by scientific
+                    research, this process is essential for maintaining your hair's youthful essence. Collagen, the
+                    secret to hair's
+                    elasticity and vibrancy, plays a critical role in achieving that timeless appearance.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                WHAT CAN I EXPECT FROM THE IN-SALON PROCESS FOR HAIR REPAIR AND REJUVENATION?
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    Rescue Therapy as a Rejuvenating Intense Repair Treatment: Your stylist will apply Rescue Therapy
+                    with a tint brush,
+                    focusing on the most damaged areas, then gently massage it throughout your hair. After a 20-minute
+                    heat treatment, your
+                    hair is rinsed, conditioned and styled. The result? Softer, smoother and revitalised lustrous hair
+                    that not only looks
+                    youthful but feels it too.
+
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                WILL IT STRAIGHTEN MY HAIR?
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    Our bioactive keratin penetrates the hair fibre, rebuilding damaged proteins to restore strength,
+                    condition and youthful
+                    elasticity. You can expect a range of transformative results for your hair:
+
+                    <br>
+
+
+                    Our bioactive keratin penetrates the hair fibre, rebuilding damaged proteins to restore strength,
+                    condition and youthful
+                    elasticity. You can expect a range of transformative results for your hair:
+                    <br>
+                    <strong>Deep Repair:</strong> It targets and repairs damaged hair at a deep level, restoring
+                    strength and integrity to each strand.
+                    Enhanced Elasticity: The treatment helps improve the elasticity of your hair, making it more
+                    resilient to breakage and
+                    damage.
+                    <br>
+                    <strong>Increased Moisture:</strong> It infuses your hair with essential moisture, combating dryness
+                    and leaving your hair feeling softer
+                    and more manageable.
+                    <br>
+                    <strong>Reduced Frizz:</strong>By smoothing the hair cuticle, bhave Rescue Therapy reduces frizz,
+                    leading to a sleeker, more polished
+                    look.
+                    <br>
+                    <strong>Restored Shine:</strong>The therapy brings back the natural shine of your hair, giving it a
+                    healthy and vibrant appearance.
+                    Improved Overall Health: Regular use can improve the overall health of your hair, making it look and
+                    feel healthier and
+                    more youthful.
+                    <br>
+                    <strong>Collagen Stimulation:</strong> The bioactive keratin in the treatment stimulates collagen
+                    production, which is key to maintaining
+                    the hair’s youthful texture and appearance.
+                    <br>
+                    Overall, bhave™ Rescue Therapy offers a comprehensive solution to revitalise and rejuvenate hair,
+                    addressing various
+                    concerns from damage repair to enhancing the hair's natural beauty.
+
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                WILL IT STRAIGHTEN MY HAIR?
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    Not quite! Rescue therapy isn’t a straightening treatment, so it won't directly straighten your
+                    hair. However, for those
+                    seeking a sleeker look, our signature keratin smoothing therapy is the way to go. While Rescue
+                    therapy itself focuses on
+                    rejuvenating your hair's health, it naturally leads to smoother strands. Healthier hair tends to be
+                    less frizzy,
+                    especially if your frizz is a tale of thermal, chemical or environmental wear and tear. So, while it
+                    won't straighten,
+                    it will definitely help in taming and smoothing your locks!
+
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                HOW FREQUENTLY SHOULD I HAVE THE TREATMENT?
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    For severely damaged/aged hair, Rescue Therapy is recommended fortnightly or monthly. Even after one
+                    treatment, the
+                    rejuvenating effects are noticeable. Your stylist will provide tailored advice.
+
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                WHY IS RESCUE THERAPY ESSENTIAL WHEN LIGHTENING/BLEACHING HAIR?
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    Lightening or bleaching can age your hair prematurely. Rescue Therapy regenerates your hair's
+                    natural keratin,
+                    preventing and repairing age-related damage from the inside out. It restores your hair's natural
+                    vitality, making it
+                    essential in any colour treatment for age-defying results.
+
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                HOW CAN I PROLONG THE RESULTS AT HOME?
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    To ensure your hair remains as strong, nourished, and protected as the day of your salon service,
+                    home care is key.
+                    Extend the benefits of the in-salon service with our award-winning Rescue shampoo and conditioner.
+                    This dynamic duo,
+                    enriched with bioactive keratin, works wonders at home by restoring elasticity, rebuilding your
+                    hair's integrity, and
+                    offering a protective shield against future damage – all while adding that enviable shine. Plus,
+                    most of our
+                    moisturisers and treatments also contain bioactive keratin, albeit in smaller percentages, to
+                    continuously support and
+                    enhance your hair’s health and appearance.
+
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                WHY BIOACTIVE KERATIN?
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    Our bioactive keratin sets a new standard in hair care innovation, boasting a groundbreaking
+                    extraction method from
+                    sheep wool without heat-based processes, retaining its full potency. Thanks to this advanced, gentle
+                    extraction method,
+                    our bioactive keratin preserves its vital amino acid sequences. This is crucial because these
+                    sequences are the building
+                    blocks of your hair's natural strength and resilience. By harnessing the power of this pure keratin,
+                    our product offers
+                    unparalleled hair rejuvenation and anti-aging benefits.
+
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                WHAT IS THE DIFFERENCE BETWEEN BIOACTIVE KERATIN AND OTHER KERATIN INGREDIENTS:
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    Our bioactive keratin sets a new standard in hair care innovation, boasting a groundbreaking
+                    extraction method from
+                    sheep wool without heat-based processes, retaining its full potency. Thanks to this advanced, gentle
+                    extraction method,
+                    our bioactive keratin preserves its vital amino acid sequences. This is crucial because these
+                    sequences are the building
+                    blocks of your hair's natural strength and resilience. By harnessing the power of this pure keratin,
+                    our product offers
+                    unparalleled hair rejuvenation and anti-aging benefits.
+
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                HOW DOES RESCUE THERAPY DIFFER FROM OTHER BOND-BUILDERS?
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    Rescue Therapy stands apart as a transformative hair care solution, not just for its effectiveness,
+                    but also for its
+                    unique composition. The main ingredient in Rescue Therapy is a 100% natural, sustainable, active
+                    product that closely
+                    mirrors the keratin found in human hair. This is not a synthetic substitute; it's a real, natural
+                    solution that can be
+                    used as frequently as needed without any adverse effects.
+                    <br> <br>
+                    This natural keratin's molecular structure is lightweight, ensuring that it doesn't weigh down your
+                    hair, regardless of
+                    its type. It's particularly beneficial for fine hair, where heavy products can lead to limpness and
+                    lifelessness. Rescue
+                    Therapy is more than just a temporary fix; it's a deep-repair system that penetrates the hair shaft,
+                    effectively
+                    reversing the aging process of your hair.
+                    <br> <br>
+                    Unlike other bond builders that might offer temporary strength or superficial coating, Rescue
+                    Therapy rejuvenates from
+                    within. It replenishes and restores, bringing back the youthful vitality, elasticity and resilience
+                    of your hair. This
+                    makes it a unique, standout product in a market filled with synthetic and temporary solutions.
+
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="collapsibles-wrapper">
+
+              <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
+                WHERE IS BIOACTIVE KERATIN SOURCED?
+
+              </p>
+              <div class="collapsible-content mt-3">
+                <div class="collapsible-content__inner">
+
+
+                  <p class=" text-base mb-4">
+                    Wool, a 100% natural and fully renewable fibre, is produced year-round by various animals, including
+                    sheep. Our wool is
+                    sourced from sheep that graze in New Zealand's pristine countryside. Breeds like the Romney and
+                    Perendale, do not
+                    naturally shed their wool, are common. Shearing these sheep annually, especially before the hot
+                    summer months, is
+                    crucial for their comfort, preventing the discomfort of carrying a full fleece in the heat.
+                    <br> <br>
+                    The process of harvesting the wool is similar to a haircut, using electronic clippers in a humane
+                    and gentle manner.
+                    After shearing, the sheep are returned to their pastures to graze and rear their young. At no point
+                    in the wool
+                    harvesting process are the animals harmed, ensuring an ethical and sustainable source for the
+                    bioactive keratin.
+                    <br> <br>
+                    Bioactive keratin is completely natural, sustainable and renewable.
+                  </p>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================FAQ END=========== -->
+  <!-- ==============BOUGHT START============ -->
+  <section class="my-16">
+    <div class=" container mx-auto">
+      <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
+        <div class=" md:flex justify-center">
+          <div class="">
+            <h2
+              class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center  mb-2 lg:mb-0 mr-2">
+              CUSTOMERS ALSO </h2>
+          </div>
+          <div class="">
+            <h2
+              class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  font-extrabold text-center  mb-2 lg:mb-0">
+              BOUGHT</h2>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 md:gap-4 lg:gap-10 mt-16">
+          <div class=" px-3 py-4 productCard   border  border-transparent rounded-lg hover:border-[#F7B4C0]">
+            <div class="w-full productImg">
+              <div class="productImg1">
+                <a href="#"><img class="object-fit h-[150px] lg:h-[250px]  w-full"
+                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p1.jpg"
+                    alt=""></a>
+              </div>
+
+              <div class="productImg2">
+                <a href="#"><img class="object-fit h-[150px] lg:h-[250px]  w-full"
+                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p2.jpg"
+                    alt=""></a>
+              </div>
+
+              <div class="approveIcon w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full">
+                <img
+                  src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/AWARD-WINNERpng.png"
+                  alt="">
+              </div>
+            </div>
+            <div class=" mt-3">
+              <div class=" flex items-center  justify-center gap-2">
+                <div class="">
+                  <ul class=" flex gap-1">
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                  </ul>
                 </div>
                 <div class="">
-                    <h2>
-                        <h2
-                            class=" text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center  mb-2 lg:mb-0">
-                            QUESTIONS</span></h2>
-                    </h2>
+                  <p class=" text-base underline">32<span class=" hidden md:inline-block">Reviews</span> </p>
                 </div>
+              </div>
+              <div class=" mt-2">
+                <h2 class=" text-lg font-medium text-center">bhave™</h2>
+                <h2 class="text-xl font-bold text-center">rescue conditioner</h2>
+                <h2 class="mt-3 text-xl font-semibold text-center"> <span>$</span>47.25</h2>
+                <a href="#">
+                  <div class=" mt-2 bg-[#F7B4C0] rounded-full text-center px-4 py-1 ">
+                    add to cart
+                  </div>
+                </a>
+              </div>
             </div>
-
-            <div class="lg:w-3/5 mx-auto pl-3 pr-5 xl:px-0">
-                <div class=" mt-10">
-                    <div class="collapsible-tabs__wrapper">
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                WHAT IS THE MAIN INGREDIENT USED IN BHAVE™ RESCUE
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-                                    <p class=" text-sm lg:text-base  mb-4">
-                                        Step into the world of bioactive keratin, where science and nature converge to
-                                        bring you the
-                                        ultimate solution for
-                                        youthful, vibrant hair. This isn't just any ingredient; it's a powerhouse of
-                                        strength and
-                                        protection, naturally integral
-                                        to hair, skin and nails.
-
-                                    </p>
-
-                                    <p class=" text-base mb-4">
-                                        Bioactive keratin is a form of keratin that is functional and active, meaning it
-                                        can interact
-                                        beneficially with living
-                                        cells, particularly those in human hair and skin. Unlike regular keratin, which
-                                        might be denatured
-                                        or less active due to
-                                        harsh extraction processes, bioactive keratin is extracted in a way that
-                                        preserves its natural
-                                        structure and active
-                                        properties.
-
-                                    </p>
-
-
-                                    <p class=" text-base mb-4">
-                                        This type of keratin closely resembles the keratin found in human hair, making
-                                        it highly effective
-                                        for hair
-                                        rejuvenation. When applied, it can penetrate the hair, bonding with the natural
-                                        keratin present.
-                                        This results in various
-                                        benefits like improved hair strength, increased elasticity and enhanced moisture
-                                        retention,
-                                        contributing to healthier,
-                                        more resilient hair.
-
-                                    </p>
-
-
-                                    <p class=" text-base mb-4">
-                                        Here's the real breakthrough: our keratin is a game-changer in anti-aging hair
-                                        care. It goes beyond
-                                        mere damage repair –
-                                        it rejuvenates your hair right down to the cellular level, stimulating collagen
-                                        production. Backed
-                                        by scientific
-                                        research, this process is essential for maintaining your hair's youthful
-                                        essence. Collagen, the
-                                        secret to hair's
-                                        elasticity and vibrancy, plays a critical role in achieving that timeless
-                                        appearance.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                WHAT CAN I EXPECT FROM THE IN-SALON PROCESS FOR HAIR REPAIR AND REJUVENATION?
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        Rescue Therapy as a Rejuvenating Intense Repair Treatment: Your stylist will
-                                        apply Rescue Therapy
-                                        with a tint brush,
-                                        focusing on the most damaged areas, then gently massage it throughout your hair.
-                                        After a 20-minute
-                                        heat treatment, your
-                                        hair is rinsed, conditioned and styled. The result? Softer, smoother and
-                                        revitalised lustrous hair
-                                        that not only looks
-                                        youthful but feels it too.
-
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                WILL IT STRAIGHTEN MY HAIR?
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        Our bioactive keratin penetrates the hair fibre, rebuilding damaged proteins to
-                                        restore strength,
-                                        condition and youthful
-                                        elasticity. You can expect a range of transformative results for your hair:
-
-                                        <br>
-
-
-                                        Our bioactive keratin penetrates the hair fibre, rebuilding damaged proteins to
-                                        restore strength,
-                                        condition and youthful
-                                        elasticity. You can expect a range of transformative results for your hair:
-                                        <br>
-                                        <strong>Deep Repair:</strong> It targets and repairs damaged hair at a deep
-                                        level, restoring
-                                        strength and integrity to each strand.
-                                        Enhanced Elasticity: The treatment helps improve the elasticity of your hair,
-                                        making it more
-                                        resilient to breakage and
-                                        damage.
-                                        <br>
-                                        <strong>Increased Moisture:</strong> It infuses your hair with essential
-                                        moisture, combating dryness
-                                        and leaving your hair feeling softer
-                                        and more manageable.
-                                        <br>
-                                        <strong>Reduced Frizz:</strong>By smoothing the hair cuticle, bhave Rescue
-                                        Therapy reduces frizz,
-                                        leading to a sleeker, more polished
-                                        look.
-                                        <br>
-                                        <strong>Restored Shine:</strong>The therapy brings back the natural shine of
-                                        your hair, giving it a
-                                        healthy and vibrant appearance.
-                                        Improved Overall Health: Regular use can improve the overall health of your
-                                        hair, making it look and
-                                        feel healthier and
-                                        more youthful.
-                                        <br>
-                                        <strong>Collagen Stimulation:</strong> The bioactive keratin in the treatment
-                                        stimulates collagen
-                                        production, which is key to maintaining
-                                        the hair’s youthful texture and appearance.
-                                        <br>
-                                        Overall, bhave™ Rescue Therapy offers a comprehensive solution to revitalise and
-                                        rejuvenate hair,
-                                        addressing various
-                                        concerns from damage repair to enhancing the hair's natural beauty.
-
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                WILL IT STRAIGHTEN MY HAIR?
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        Not quite! Rescue therapy isn’t a straightening treatment, so it won't directly
-                                        straighten your
-                                        hair. However, for those
-                                        seeking a sleeker look, our signature keratin smoothing therapy is the way to
-                                        go. While Rescue
-                                        therapy itself focuses on
-                                        rejuvenating your hair's health, it naturally leads to smoother strands.
-                                        Healthier hair tends to be
-                                        less frizzy,
-                                        especially if your frizz is a tale of thermal, chemical or environmental wear
-                                        and tear. So, while it
-                                        won't straighten,
-                                        it will definitely help in taming and smoothing your locks!
-
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                HOW FREQUENTLY SHOULD I HAVE THE TREATMENT?
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        For severely damaged/aged hair, Rescue Therapy is recommended fortnightly or
-                                        monthly. Even after one
-                                        treatment, the
-                                        rejuvenating effects are noticeable. Your stylist will provide tailored advice.
-
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                WHY IS RESCUE THERAPY ESSENTIAL WHEN LIGHTENING/BLEACHING HAIR?
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        Lightening or bleaching can age your hair prematurely. Rescue Therapy
-                                        regenerates your hair's
-                                        natural keratin,
-                                        preventing and repairing age-related damage from the inside out. It restores
-                                        your hair's natural
-                                        vitality, making it
-                                        essential in any colour treatment for age-defying results.
-
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                HOW CAN I PROLONG THE RESULTS AT HOME?
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        To ensure your hair remains as strong, nourished, and protected as the day of
-                                        your salon service,
-                                        home care is key.
-                                        Extend the benefits of the in-salon service with our award-winning Rescue
-                                        shampoo and conditioner.
-                                        This dynamic duo,
-                                        enriched with bioactive keratin, works wonders at home by restoring elasticity,
-                                        rebuilding your
-                                        hair's integrity, and
-                                        offering a protective shield against future damage – all while adding that
-                                        enviable shine. Plus,
-                                        most of our
-                                        moisturisers and treatments also contain bioactive keratin, albeit in smaller
-                                        percentages, to
-                                        continuously support and
-                                        enhance your hair’s health and appearance.
-
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                WHY BIOACTIVE KERATIN?
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        Our bioactive keratin sets a new standard in hair care innovation, boasting a
-                                        groundbreaking
-                                        extraction method from
-                                        sheep wool without heat-based processes, retaining its full potency. Thanks to
-                                        this advanced, gentle
-                                        extraction method,
-                                        our bioactive keratin preserves its vital amino acid sequences. This is crucial
-                                        because these
-                                        sequences are the building
-                                        blocks of your hair's natural strength and resilience. By harnessing the power
-                                        of this pure keratin,
-                                        our product offers
-                                        unparalleled hair rejuvenation and anti-aging benefits.
-
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                WHAT IS THE DIFFERENCE BETWEEN BIOACTIVE KERATIN AND OTHER KERATIN INGREDIENTS:
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        Our bioactive keratin sets a new standard in hair care innovation, boasting a
-                                        groundbreaking
-                                        extraction method from
-                                        sheep wool without heat-based processes, retaining its full potency. Thanks to
-                                        this advanced, gentle
-                                        extraction method,
-                                        our bioactive keratin preserves its vital amino acid sequences. This is crucial
-                                        because these
-                                        sequences are the building
-                                        blocks of your hair's natural strength and resilience. By harnessing the power
-                                        of this pure keratin,
-                                        our product offers
-                                        unparalleled hair rejuvenation and anti-aging benefits.
-
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                HOW DOES RESCUE THERAPY DIFFER FROM OTHER BOND-BUILDERS?
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        Rescue Therapy stands apart as a transformative hair care solution, not just for
-                                        its effectiveness,
-                                        but also for its
-                                        unique composition. The main ingredient in Rescue Therapy is a 100% natural,
-                                        sustainable, active
-                                        product that closely
-                                        mirrors the keratin found in human hair. This is not a synthetic substitute;
-                                        it's a real, natural
-                                        solution that can be
-                                        used as frequently as needed without any adverse effects.
-                                        <br> <br>
-                                        This natural keratin's molecular structure is lightweight, ensuring that it
-                                        doesn't weigh down your
-                                        hair, regardless of
-                                        its type. It's particularly beneficial for fine hair, where heavy products can
-                                        lead to limpness and
-                                        lifelessness. Rescue
-                                        Therapy is more than just a temporary fix; it's a deep-repair system that
-                                        penetrates the hair shaft,
-                                        effectively
-                                        reversing the aging process of your hair.
-                                        <br> <br>
-                                        Unlike other bond builders that might offer temporary strength or superficial
-                                        coating, Rescue
-                                        Therapy rejuvenates from
-                                        within. It replenishes and restores, bringing back the youthful vitality,
-                                        elasticity and resilience
-                                        of your hair. This
-                                        makes it a unique, standout product in a market filled with synthetic and
-                                        temporary solutions.
-
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapsibles-wrapper">
-
-                            <p type="button" class="collapsible-trigger-btn text-sm lg:text-base w-11/12">
-                                WHERE IS BIOACTIVE KERATIN SOURCED?
-
-                            </p>
-                            <div class="collapsible-content mt-3">
-                                <div class="collapsible-content__inner">
-
-
-                                    <p class=" text-base mb-4">
-                                        Wool, a 100% natural and fully renewable fibre, is produced year-round by
-                                        various animals, including
-                                        sheep. Our wool is
-                                        sourced from sheep that graze in New Zealand's pristine countryside. Breeds like
-                                        the Romney and
-                                        Perendale, do not
-                                        naturally shed their wool, are common. Shearing these sheep annually, especially
-                                        before the hot
-                                        summer months, is
-                                        crucial for their comfort, preventing the discomfort of carrying a full fleece
-                                        in the heat.
-                                        <br> <br>
-                                        The process of harvesting the wool is similar to a haircut, using electronic
-                                        clippers in a humane
-                                        and gentle manner.
-                                        After shearing, the sheep are returned to their pastures to graze and rear their
-                                        young. At no point
-                                        in the wool
-                                        harvesting process are the animals harmed, ensuring an ethical and sustainable
-                                        source for the
-                                        bioactive keratin.
-                                        <br> <br>
-                                        Bioactive keratin is completely natural, sustainable and renewable.
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class=" px-3 py-4 productCard   border  border-transparent rounded-lg hover:border-[#F7B4C0]">
+            <div class="w-full productImg">
+              <div class="productImg1">
+                <a href="#"><img class="object-fit h-[150px] lg:h-[250px] w-full"
+                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p1.jpg"
+                    alt=""></a>
+              </div>
+
+              <div class="productImg2">
+                <a href="#"><img class="object-fit h-[150px] lg:h-[250px]  w-full"
+                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p2.jpg"
+                    alt=""></a>
+              </div>
+
+            </div>
+            <div class=" mt-3">
+              <div class=" flex items-center  justify-center gap-2">
+                <div class="">
+                  <ul class=" flex gap-1">
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                  </ul>
                 </div>
+                <div class="">
+                  <p class=" text-base underline">32<span class=" hidden md:inline-block">Reviews</span> </p>
+                </div>
+              </div>
+              <div class=" mt-2">
+                <h2 class=" text-lg font-medium text-center">bhave™</h2>
+                <h2 class="text-xl font-bold text-center">rescue conditioner</h2>
+                <h2 class="mt-3 text-xl font-semibold text-center"> <span>$</span>47.25</h2>
+                <a href="#">
+                  <div class=" mt-2 bg-[#F7B4C0] rounded-full text-center px-4 py-1 ">
+                    add to cart
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
+          <div class=" px-3 py-4 productCard   border  border-transparent rounded-lg hover:border-[#F7B4C0]">
+            <div class="w-full productImg">
+              <div class="productImg1">
+                <a href="#"><img class="object-fit h-[150px] lg:h-[250px]  w-full"
+                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p1.jpg"
+                    alt=""></a>
+              </div>
+
+              <div class="productImg2">
+                <a href="#"><img class="object-fit h-[200px]  w-full"
+                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p2.jpg"
+                    alt=""></a>
+              </div>
+
+            </div>
+            <div class=" mt-3">
+              <div class=" flex items-center  justify-center gap-2">
+                <div class="">
+                  <ul class=" flex gap-1">
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                  </ul>
+                </div>
+                <div class="d-none md:d-flex">
+                  <p class=" text-base underline">32<span class=" hidden md:inline-block">Reviews</span> </p>
+                </div>
+              </div>
+              <div class=" mt-2">
+                <h2 class=" text-lg font-medium text-center">bhave™</h2>
+                <h2 class="text-xl font-bold text-center">rescue conditioner</h2>
+                <h2 class="mt-3 text-xl font-semibold text-center"> <span>$</span>47.25</h2>
+                <a href="#">
+                  <div class=" mt-2 bg-[#F7B4C0] rounded-full text-center px-4 py-1 ">
+                    add to cart
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class=" px-3 py-4 productCard   border  border-transparent rounded-lg hover:border-[#F7B4C0]">
+            <div class="w-full productImg">
+              <div class="productImg1">
+                <a href="#"><img class="object-fit h-[150px] lg:h-[250px]  w-full"
+                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p1.jpg"
+                    alt=""></a>
+              </div>
+
+              <div class="productImg2">
+                <a href="#"><img class="object-fit h-[200px]  w-full"
+                    src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p2.jpg"
+                    alt=""></a>
+              </div>
+
+            </div>
+            <div class=" mt-3">
+              <div class=" flex items-center  justify-center gap-2">
+                <div class="">
+                  <ul class=" flex gap-1">
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                    <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
+                  </ul>
+                </div>
+                <div class="d-none md:d-flex">
+                  <p class=" text-base underline">32<span class=" hidden md:inline-block">Reviews</span> </p>
+                </div>
+              </div>
+              <div class=" mt-2">
+                <h2 class=" text-lg font-medium text-center">bhave™</h2>
+                <h2 class="text-xl font-bold text-center">rescue conditioner</h2>
+                <h2 class="mt-3 text-xl font-semibold text-center"> <span>$</span>47.25</h2>
+                <a href="#">
+                  <div class=" mt-2 bg-[#F7B4C0] rounded-full text-center px-4 py-1 ">
+                    add to cart
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- ================FAQ END=========== -->
-    <!-- ==============BOUGHT START============ -->
-    <section class="my-16">
-        <div class=" container mx-auto">
-            <div class="xl:w-11/12 mx-auto px-6 md:px-10 xl:px-0">
-                <div class=" md:flex justify-center">
-                    <div class="">
-                        <h2
-                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none font-bold text-center  mb-2 lg:mb-0 mr-2">
-                            CUSTOMERS ALSO </h2>
-                    </div>
-                    <div class="">
-                        <h2
-                            class="text-2xl  lg:text-3xl xl:text-4xl text-black leading-none  font-extrabold text-center  mb-2 lg:mb-0">
-                            BOUGHT</h2>
-                    </div>
-                </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==============BOUGHT END============ -->
 
-                <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 md:gap-4 lg:gap-10 mt-16">
-                    <div class=" px-3 py-4 productCard   border  border-transparent rounded-lg hover:border-[#F7B4C0]">
-                        <div class="w-full productImg">
-                            <div class="productImg1">
-                                <a href="#"><img class="object-fit h-[200px]  w-full"
-                                        src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p1.jpg"
-                                        alt=""></a>
-                            </div>
+  <!-- ================quiz start============= -->
+  <!-- ================ -->
+  <section class="bg-[#f8e8eaf8]">
+    <div class=" quiz-back-mobile "
+      style=" background-image: url('https://bhavehair.com.au/cdn/shop/files/BG-3-Mobile_800x.png?v=1703410583');">
+      <div class="container mx-auto">
+        <div class=" py-10">
+          <div class="md:grid grid-cols-12">
+            <div class=" col-span-7 lg:col-span-6 xl:col-span-4 px-3 xl:px-0">
+              <h2 class=" text-2xl  lg:text-3xl xl:text-4xl text-center lg:text-left text-black">DISCOVER YOUR</h2>
+              <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-center lg:text-left text-black font-bold">HAIR ROUTINE
+              </h2>
+              <p class=" text-lg leading-7 my-4 text-center lg:text-left">Get personalised haircare recommendations when
+                you take our 5 minute,
+                expert-crafted hair quiz.</p>
+              <div class="text-center lg:text-left mt-2 lg:mt-10">
+                <a href="#" class=" bg-[#F7B4C0] rounded-full text-center px-8 py-2 text-lg  font-medium">
+                  take the quiz
+                </a>
+              </div>
 
-                            <div class="productImg2">
-                                <a href="#"><img class="object-fit h-[200px]  w-full"
-                                        src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p2.jpg"
-                                        alt=""></a>
-                            </div>
-
-                            <div class="approveIcon w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full">
-                                <img src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/AWARD-WINNERpng.png"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class=" mt-3">
-                            <div class=" flex items-center  justify-center gap-2">
-                                <div class="">
-                                    <ul class=" flex gap-1">
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="">
-                                    <p class=" text-base underline">32<span
-                                            class=" hidden md:inline-block">Reviews</span> </p>
-                                </div>
-                            </div>
-                            <div class=" mt-2">
-                                <h2 class=" text-lg font-medium text-center">bhave™</h2>
-                                <h2 class="text-xl font-bold text-center">rescue conditioner</h2>
-                                <h2 class="mt-3 text-xl font-semibold text-center"> <span>$</span>47.25</h2>
-                                <a href="#">
-                                    <div class=" mt-2 bg-[#F7B4C0] rounded-full text-center px-4 py-1 ">
-                                        add to cart
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" px-3 py-4 productCard   border  border-transparent rounded-lg hover:border-[#F7B4C0]">
-                        <div class="w-full productImg">
-                            <div class="productImg1">
-                                <a href="#"><img class="object-fit h-[200px]  w-full"
-                                        src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p1.jpg"
-                                        alt=""></a>
-                            </div>
-
-                            <div class="productImg2">
-                                <a href="#"><img class="object-fit h-[200px]  w-full"
-                                        src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p2.jpg"
-                                        alt=""></a>
-                            </div>
-
-                        </div>
-                        <div class=" mt-3">
-                            <div class=" flex items-center  justify-center gap-2">
-                                <div class="">
-                                    <ul class=" flex gap-1">
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="">
-                                    <p class=" text-base underline">32<span
-                                            class=" hidden md:inline-block">Reviews</span> </p>
-                                </div>
-                            </div>
-                            <div class=" mt-2">
-                                <h2 class=" text-lg font-medium text-center">bhave™</h2>
-                                <h2 class="text-xl font-bold text-center">rescue conditioner</h2>
-                                <h2 class="mt-3 text-xl font-semibold text-center"> <span>$</span>47.25</h2>
-                                <a href="#">
-                                    <div class=" mt-2 bg-[#F7B4C0] rounded-full text-center px-4 py-1 ">
-                                        add to cart
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" px-3 py-4 productCard   border  border-transparent rounded-lg hover:border-[#F7B4C0]">
-                        <div class="w-full productImg">
-                            <div class="productImg1">
-                                <a href="#"><img class="object-fit h-[200px]  w-full"
-                                        src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p1.jpg"
-                                        alt=""></a>
-                            </div>
-
-                            <div class="productImg2">
-                                <a href="#"><img class="object-fit h-[200px]  w-full"
-                                        src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p2.jpg"
-                                        alt=""></a>
-                            </div>
-
-                        </div>
-                        <div class=" mt-3">
-                            <div class=" flex items-center  justify-center gap-2">
-                                <div class="">
-                                    <ul class=" flex gap-1">
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="d-none md:d-flex">
-                                    <p class=" text-base underline">32<span
-                                            class=" hidden md:inline-block">Reviews</span> </p>
-                                </div>
-                            </div>
-                            <div class=" mt-2">
-                                <h2 class=" text-lg font-medium text-center">bhave™</h2>
-                                <h2 class="text-xl font-bold text-center">rescue conditioner</h2>
-                                <h2 class="mt-3 text-xl font-semibold text-center"> <span>$</span>47.25</h2>
-                                <a href="#">
-                                    <div class=" mt-2 bg-[#F7B4C0] rounded-full text-center px-4 py-1 ">
-                                        add to cart
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" px-3 py-4 productCard   border  border-transparent rounded-lg hover:border-[#F7B4C0]">
-                        <div class="w-full productImg">
-                            <div class="productImg1">
-                                <a href="#"><img class="object-fit h-[200px]  w-full"
-                                        src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p1.jpg"
-                                        alt=""></a>
-                            </div>
-
-                            <div class="productImg2">
-                                <a href="#"><img class="object-fit h-[200px]  w-full"
-                                        src="https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/p2.jpg"
-                                        alt=""></a>
-                            </div>
-
-                        </div>
-                        <div class=" mt-3">
-                            <div class=" flex items-center  justify-center gap-2">
-                                <div class="">
-                                    <ul class=" flex gap-1">
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                        <li class=" text-base"><i class="fa-solid fa-star text-[#F7B4C0]"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="d-none md:d-flex">
-                                    <p class=" text-base underline">32<span
-                                            class=" hidden md:inline-block">Reviews</span> </p>
-                                </div>
-                            </div>
-                            <div class=" mt-2">
-                                <h2 class=" text-lg font-medium text-center">bhave™</h2>
-                                <h2 class="text-xl font-bold text-center">rescue conditioner</h2>
-                                <h2 class="mt-3 text-xl font-semibold text-center"> <span>$</span>47.25</h2>
-                                <a href="#">
-                                    <div class=" mt-2 bg-[#F7B4C0] rounded-full text-center px-4 py-1 ">
-                                        add to cart
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- ==============BOUGHT END============ -->
+      </div>
+    </div>
+  </section>
+  <!-- ================== -->
 
-    <!-- ================quiz start============= -->
-    <!-- ================ -->
-    <section class="bg-[#f8e8eaf8]">
-        <div class=" quiz-back-mobile "
-            style=" background-image: url('https://bhavehair.com.au/cdn/shop/files/BG-3-Mobile_800x.png?v=1703410583');">
-            <div class="container mx-auto">
-                <div class=" py-10">
-                    <div class="md:grid grid-cols-12">
-                        <div class=" col-span-7 lg:col-span-6 xl:col-span-4 px-3 xl:px-0">
-                            <h2 class=" text-2xl  lg:text-3xl xl:text-4xl text-center lg:text-left text-black">DISCOVER
-                                YOUR</h2>
-                            <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-center lg:text-left text-black font-bold">
-                                HAIR ROUTINE
-                            </h2>
-                            <p class=" text-lg leading-7 my-4 text-center lg:text-left">Get personalised haircare
-                                recommendations when
-                                you take our 5 minute,
-                                expert-crafted hair quiz.</p>
-                            <div class="text-center lg:text-left mt-2 lg:mt-10">
-                                <a href="#"
-                                    class=" bg-[#F7B4C0] rounded-full text-center px-8 py-2 text-lg  font-medium">
-                                    take the quiz
-                                </a>
-                            </div>
+  <section class="">
+    <div class=" quiz-back "
+      style=" background-image: url('https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/quize-back.jpg');">
+      <div class="container mx-auto">
+        <div class=" py-10">
+          <div class="md:grid grid-cols-12">
+            <div class=" col-span-7 lg:col-span-6 xl:col-span-4 px-3 xl:px-0">
+              <h2 class=" text-2xl  lg:text-3xl xl:text-4xl text-center lg:text-left text-black">DISCOVER YOUR</h2>
+              <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-center lg:text-left text-black font-bold">HAIR ROUTINE
+              </h2>
+              <p class=" text-lg leading-7 my-4 text-center lg:text-left">Get personalised haircare recommendations when
+                you take our 5 minute,
+                expert-crafted hair quiz.</p>
+              <div class="text-center lg:text-left mt-2 lg:mt-10">
+                <a href="#" class=" bg-[#F7B4C0] rounded-full text-center px-8 py-2 text-lg  font-medium">
+                  take the quiz
+                </a>
+              </div>
 
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- ================== -->
-
-    <section class="">
-        <div class=" quiz-back "
-            style=" background-image: url('https://raw.githubusercontent.com/NoobBiswajit/emailtempate/refs/heads/main/img/quize-back.jpg');">
-            <div class="container mx-auto">
-                <div class=" py-10">
-                    <div class="md:grid grid-cols-12">
-                        <div class=" col-span-7 lg:col-span-6 xl:col-span-4 px-3 xl:px-0">
-                            <h2 class=" text-2xl  lg:text-3xl xl:text-4xl text-center lg:text-left text-black">DISCOVER
-                                YOUR</h2>
-                            <h2 class="text-2xl  lg:text-3xl xl:text-4xl text-center lg:text-left text-black font-bold">
-                                HAIR ROUTINE
-                            </h2>
-                            <p class=" text-lg leading-7 my-4 text-center lg:text-left">Get personalised haircare
-                                recommendations when
-                                you take our 5 minute,
-                                expert-crafted hair quiz.</p>
-                            <div class="text-center lg:text-left mt-2 lg:mt-10">
-                                <a href="#"
-                                    class=" bg-[#F7B4C0] rounded-full text-center px-8 py-2 text-lg  font-medium">
-                                    take the quiz
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ================quiz end============= -->
+      </div>
+    </div>
+  </section>
+  <!-- ================quiz end============= -->
 
 
-    <!-- =========script======= -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            autoplay: {
-                delay: 1000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-        });
-    </script>
-    <!-- =========script======= -->
+  <!-- =========script======= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+  </script>
+  <!-- =========script======= -->
 
-    <!-- ===========accordion========= -->
-    <script>
-        const collapsibleButtons = document.querySelectorAll(
-            ".collapsible-trigger-btn"
-        );
+  <!-- ===========accordion========= -->
+  <script>
+    const collapsibleButtons = document.querySelectorAll(
+      ".collapsible-trigger-btn"
+    );
 
-        collapsibleButtons.forEach((collapsibleButton) => {
-            const collapsibleContentDataHeight =
-                collapsibleButton.nextElementSibling.offsetHeight;
-            collapsibleButton.nextElementSibling.style.height = 0;
-            collapsibleButton.addEventListener("click", (e) => {
-                if (
-                    !e.currentTarget.parentElement.classList.contains("collapsible-tab__open")
-                ) {
-                    e.currentTarget.parentElement.classList.toggle("collapsible-tab__open");
-                    e.currentTarget.nextElementSibling.style.height = `${collapsibleContentDataHeight}px`;
-                } else {
-                    e.currentTarget.parentElement.classList.remove("collapsible-tab__open");
-                    e.currentTarget.nextElementSibling.style.height = 0;
-                }
-            });
-        });
+    collapsibleButtons.forEach((collapsibleButton) => {
+      const collapsibleContentDataHeight =
+        collapsibleButton.nextElementSibling.offsetHeight;
+      collapsibleButton.nextElementSibling.style.height = 0;
+      collapsibleButton.addEventListener("click", (e) => {
+        if (
+          !e.currentTarget.parentElement.classList.contains("collapsible-tab__open")
+        ) {
+          e.currentTarget.parentElement.classList.toggle("collapsible-tab__open");
+          e.currentTarget.nextElementSibling.style.height = `${collapsibleContentDataHeight}px`;
+        } else {
+          e.currentTarget.parentElement.classList.remove("collapsible-tab__open");
+          e.currentTarget.nextElementSibling.style.height = 0;
+        }
+      });
+    });
 
-    </script>
-    <!-- ===========accordion========= -->
+  </script>
+  <!-- ===========accordion========= -->
 </body>
 
 </html>
